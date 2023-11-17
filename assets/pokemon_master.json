@@ -1,0 +1,908 @@
+[
+  {
+    "id": 1,
+    "name": "フシギダネ",
+    "mode": 1,
+    "icon": "plant"
+  },
+  {
+    "id": 2,
+    "name": "フシギソウ",
+    "mode": 1,
+    "icon": "plant"
+  },
+  {
+    "id": 3,
+    "name": "フシギバナ",
+    "mode": 2,
+    "icon": "plant"
+  },
+  {
+    "id": 4,
+    "name": "ヒトカゲ",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 5,
+    "name": "リザード",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 6,
+    "name": "リザードン",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 7,
+    "name": "ゼニガメ",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 8,
+    "name": "カメール",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 9,
+    "name": "カメックス",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 10,
+    "name": "キャタピー",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 11,
+    "name": "トランセル",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 12,
+    "name": "バタフリー",
+    "mode": 0,
+    "icon": "insect"
+  },
+  {
+    "id": 13,
+    "name": "ビードル",
+    "mode": 0,
+    "icon": "insect"
+  },
+  {
+    "id": 14,
+    "name": "コクーン",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 15,
+    "name": "スピアー",
+    "mode": 0,
+    "icon": "insect"
+  },
+  {
+    "id": 16,
+    "name": "ポッポ",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 17,
+    "name": "ピジョン",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 18,
+    "name": "ピジョット",
+    "mode": 2,
+    "icon": "bird"
+  },
+  {
+    "id": 19,
+    "name": "コラッタ",
+    "mode": 0,
+    "icon": "bull"
+  },
+  {
+    "id": 20,
+    "name": "ラッタ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 21,
+    "name": "オニスズメ",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 22,
+    "name": "オニドリル",
+    "mode": 2,
+    "icon": "bird"
+  },
+  {
+    "id": 23,
+    "name": "アーボ",
+    "mode": 2,
+    "icon": "snake"
+  },
+  {
+    "id": 24,
+    "name": "アーボック",
+    "mode": 1,
+    "icon": "snake"
+  },
+  {
+    "id": 25,
+    "name": "ピカチュウ",
+    "mode": 0,
+    "icon": "pikachu"
+  },
+  {
+    "id": 26,
+    "name": "ライチュウ",
+    "mode": 0,
+    "icon": "pippi"
+  },
+  {
+    "id": 27,
+    "name": "サンド",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 28,
+    "name": "サンドパン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 29,
+    "name": "ニドラン♀",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 30,
+    "name": "ニドリーナ",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 31,
+    "name": "ニドクイン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 32,
+    "name": "ニドラン♂",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 33,
+    "name": "ニドリーノ",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 34,
+    "name": "ニドキング",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 35,
+    "name": "ピッピ",
+    "mode": 0,
+    "icon": "pippi"
+  },
+  {
+    "id": 36,
+    "name": "ピクシー",
+    "mode": 0,
+    "icon": "pippi"
+  },
+  {
+    "id": 37,
+    "name": "ロコン",
+    "mode": 0,
+    "icon": "bull"
+  },
+  {
+    "id": 38,
+    "name": "キュウコン",
+    "mode": 0,
+    "icon": "bull"
+  },
+  {
+    "id": 39,
+    "name": "プリン",
+    "mode": 1,
+    "icon": "pippi"
+  },
+  {
+    "id": 40,
+    "name": "プクリン",
+    "mode": 2,
+    "icon": "pippi"
+  },
+  {
+    "id": 41,
+    "name": "ズバット",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 42,
+    "name": "ゴルバット",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 43,
+    "name": "ナゾノクサ",
+    "mode": 1,
+    "icon": "plant"
+  },
+  {
+    "id": 44,
+    "name": "クサイハナ",
+    "mode": 2,
+    "icon": "plant"
+  },
+  {
+    "id": 45,
+    "name": "ラフレシア",
+    "mode": 2,
+    "icon": "plant"
+  },
+  {
+    "id": 46,
+    "name": "パラス",
+    "mode": 1,
+    "icon": "insect"
+  },
+  {
+    "id": 47,
+    "name": "パラセクト",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 48,
+    "name": "コンパン",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 49,
+    "name": "モルフォン",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 50,
+    "name": "ディグダ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 51,
+    "name": "ダグトリオ",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 52,
+    "name": "ニャース",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 53,
+    "name": "ペルシアン",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 54,
+    "name": "コダック",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 55,
+    "name": "ゴルダック",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 56,
+    "name": "マンキー",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 57,
+    "name": "オコリザル",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 58,
+    "name": "ガーディ",
+    "mode": 2,
+    "icon": "bull"
+  },
+  {
+    "id": 59,
+    "name": "ウインディ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 60,
+    "name": "ニョロモ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 61,
+    "name": "ニョロゾ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 62,
+    "name": "ニョロボン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 63,
+    "name": "ケーシィ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 64,
+    "name": "ユンゲラー",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 65,
+    "name": "フーディン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 66,
+    "name": "ワンリキー",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 67,
+    "name": "ゴーリキー",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 68,
+    "name": "カイリキー",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 69,
+    "name": "マダツボミ",
+    "mode": 1,
+    "icon": "plant"
+  },
+  {
+    "id": 70,
+    "name": "ウツドン",
+    "mode": 1,
+    "icon": "plant"
+  },
+  {
+    "id": 71,
+    "name": "ウツボット",
+    "mode": 2,
+    "icon": "plant"
+  },
+  {
+    "id": 72,
+    "name": "メノクラゲ",
+    "mode": 0,
+    "icon": "surf"
+  },
+  {
+    "id": 73,
+    "name": "ドククラゲ",
+    "mode": 0,
+    "icon": "surf"
+  },
+  {
+    "id": 74,
+    "name": "イシツブテ",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 75,
+    "name": "ゴローン",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 76,
+    "name": "ゴローニャ",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 77,
+    "name": "ポニータ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 78,
+    "name": "ギャロップ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 79,
+    "name": "ヤドン",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 80,
+    "name": "ヤドラン",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 81,
+    "name": "コイル",
+    "mode": 1,
+    "icon": "mball"
+  },
+  {
+    "id": 82,
+    "name": "レアコイル",
+    "mode": 1,
+    "icon": "mball"
+  },
+  {
+    "id": 83,
+    "name": "カモネギ",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 84,
+    "name": "ドードー",
+    "mode": 2,
+    "icon": "bird"
+  },
+  {
+    "id": 85,
+    "name": "ドードリオ",
+    "mode": 1,
+    "icon": "bird"
+  },
+  {
+    "id": 86,
+    "name": "パウワウ",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 87,
+    "name": "ジュゴン",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 88,
+    "name": "ベトベター",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 89,
+    "name": "ベトベトン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 90,
+    "name": "シェルダー",
+    "mode": 1,
+    "icon": "shell"
+  },
+  {
+    "id": 91,
+    "name": "パルシェン",
+    "mode": 2,
+    "icon": "shell"
+  },
+  {
+    "id": 92,
+    "name": "ゴース",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 93,
+    "name": "ゴースト",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 94,
+    "name": "ゲンガー",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 95,
+    "name": "イワーク",
+    "mode": 0,
+    "icon": "snake"
+  },
+  {
+    "id": 96,
+    "name": "スリープ",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 97,
+    "name": "スリーパー",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 98,
+    "name": "クラブ",
+    "mode": 0,
+    "icon": "surf"
+  },
+  {
+    "id": 99,
+    "name": "キングラー",
+    "mode": 0,
+    "icon": "surf"
+  },
+  {
+    "id": 100,
+    "name": "ビリリダマ",
+    "mode": 1,
+    "icon": "mball"
+  },
+  {
+    "id": 101,
+    "name": "マルマイン",
+    "mode": 1,
+    "icon": "mball"
+  },
+  {
+    "id": 102,
+    "name": "タマタマ",
+    "mode": 0,
+    "icon": "plant"
+  },
+  {
+    "id": 103,
+    "name": "ナッシー",
+    "mode": 0,
+    "icon": "plant"
+  },
+  {
+    "id": 104,
+    "name": "カラカラ",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 105,
+    "name": "ガラガラ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 106,
+    "name": "サワムラー",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 107,
+    "name": "エビワラー",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 108,
+    "name": "ベロリンガ",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 109,
+    "name": "ドガース",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 110,
+    "name": "マタドガス",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 111,
+    "name": "サイホーン",
+    "mode": 2,
+    "icon": "bull"
+  },
+  {
+    "id": 112,
+    "name": "サイドン",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 113,
+    "name": "ラッキー",
+    "mode": 2,
+    "icon": "pippi"
+  },
+  {
+    "id": 114,
+    "name": "モンジャラ",
+    "mode": 0,
+    "icon": "plant"
+  },
+  {
+    "id": 115,
+    "name": "ガルーラ",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 116,
+    "name": "タッツー",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 117,
+    "name": "シードラ",
+    "mode": 1,
+    "icon": "surf"
+  },
+  {
+    "id": 118,
+    "name": "トサキント",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 119,
+    "name": "アズマオウ",
+    "mode": 2,
+    "icon": "surf"
+  },
+  {
+    "id": 120,
+    "name": "ヒトデマン",
+    "mode": 0,
+    "icon": "shell"
+  },
+  {
+    "id": 121,
+    "name": "スターミー",
+    "mode": 0,
+    "icon": "shell"
+  },
+  {
+    "id": 122,
+    "name": "バリヤード",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 123,
+    "name": "ストライク",
+    "mode": 2,
+    "icon": "insect"
+  },
+  {
+    "id": 124,
+    "name": "ルージュラ",
+    "mode": 0,
+    "icon": "zaurus"
+  },
+  {
+    "id": 125,
+    "name": "エレブー",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 126,
+    "name": "ブーバー",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 127,
+    "name": "カイロス",
+    "mode": 1,
+    "icon": "insect"
+  },
+  {
+    "id": 128,
+    "name": "ケンタロス",
+    "mode": 2,
+    "icon": "bull"
+  },
+  {
+    "id": 129,
+    "name": "コイキング",
+    "mode": 1,
+    "icon": "surf"
+  },
+  {
+    "id": 130,
+    "name": "ギャラドス",
+    "mode": 2,
+    "icon": "snake"
+  },
+  {
+    "id": 131,
+    "name": "ラプラス",
+    "mode": 0,
+    "icon": "surf"
+  },
+  {
+    "id": 132,
+    "name": "メタモン",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 133,
+    "name": "イーブイ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 134,
+    "name": "シャワーズ",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 135,
+    "name": "サンダース",
+    "mode": 2,
+    "icon": "bull"
+  },
+  {
+    "id": 136,
+    "name": "ブースター",
+    "mode": 1,
+    "icon": "bull"
+  },
+  {
+    "id": 137,
+    "name": "ポリゴン",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 138,
+    "name": "オムナイト",
+    "mode": 2,
+    "icon": "shell"
+  },
+  {
+    "id": 139,
+    "name": "オムスター",
+    "mode": 1,
+    "icon": "shell"
+  },
+  {
+    "id": 140,
+    "name": "カブト",
+    "mode": 0,
+    "icon": "shell"
+  },
+  {
+    "id": 141,
+    "name": "カブトプス",
+    "mode": 0,
+    "icon": "shell"
+  },
+  {
+    "id": 142,
+    "name": "プテラ",
+    "mode": 2,
+    "icon": "bird"
+  },
+  {
+    "id": 143,
+    "name": "カビゴン",
+    "mode": 1,
+    "icon": "zaurus"
+  },
+  {
+    "id": 144,
+    "name": "フリーザー",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 145,
+    "name": "サンダー",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 146,
+    "name": "ファイヤー",
+    "mode": 0,
+    "icon": "bird"
+  },
+  {
+    "id": 147,
+    "name": "ミニリュウ",
+    "mode": 1,
+    "icon": "snake"
+  },
+  {
+    "id": 148,
+    "name": "ハクリュー",
+    "mode": 1,
+    "icon": "snake"
+  },
+  {
+    "id": 149,
+    "name": "カイリュー",
+    "mode": 2,
+    "icon": "snake"
+  },
+  {
+    "id": 150,
+    "name": "ミュウツー",
+    "mode": 2,
+    "icon": "zaurus"
+  },
+  {
+    "id": 151,
+    "name": "ミュウ",
+    "mode": 3,
+    "icon": "zaurus"
+  }
+]

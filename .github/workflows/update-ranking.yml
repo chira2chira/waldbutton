@@ -1,0 +1,16 @@
+name: update ranking page
+
+on:
+  schedule:
+    - cron:  '1 15 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: invoke api
+        env:
+          ISR_SECRET_TOKEN: ${{secrets.ISR_SECRET_TOKEN}}
+        run: |
+          curl https://waldbutton.vercel.app/api/update-ranking?secret=${ISR_SECRET_TOKEN}
