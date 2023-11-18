@@ -1280,6 +1280,11 @@
   kana: テッカテカやーん
   id: p_u_x1SF_gU
   time: 22:43
+- url: /static/voice/でたよ.mp3
+  text: でたよ
+  kana: でたよ
+  id: -7UzOhFzcHQ
+  time: 19:12
 - url: /static/voice/つんよ.mp3
   text: つんよ
   kana: つんよ
@@ -1415,6 +1420,11 @@
   kana: なまいき！！
   id: Y3tsIDuR8m0
   time: 1:40:54
+- url: /static/voice/舐められたものですねぇ！.mp3
+  text: 舐められたものですねぇ！
+  kana: なめられたものですねぇ！
+  id: -7UzOhFzcHQ
+  time: 09:05
 - url: /static/voice/なるほどな.mp3
   text: なるほどな
   kana: なるほどな
