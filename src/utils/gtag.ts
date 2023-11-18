@@ -1,4 +1,4 @@
-export const GA_GA4_ID = "G-6QP9BCYXQ4";
+export const GA_GA4_ID = process.env.GA_GA4_ID || "";
 
 type GtagEvent = {
   /** レポートでイベントアクションとして表示される値 */
