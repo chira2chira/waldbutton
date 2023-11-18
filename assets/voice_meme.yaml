@@ -333,6 +333,11 @@
   kana: ぼくなんかやっちゃいました？
   id: _G8gE_gj74s
   time: 58:41
+- url: /static/voice/ボンバーマン！バイハドソン！.mp3
+  text: ボンバーマン！バイハドソン！
+  kana: ボンバーマン！バイハドソン！
+  id: uRlVbbSacro
+  time: 40:30
 - url: /static/voice/マヤオ.mp3
   text: マヤオ
   kana: マヤオ
@@ -528,8 +533,3 @@
   kana: しずかちゃん(きゅう)のモノマネ
   id: You0ZCauhKw
   time: 25:18
-- url: /static/voice/ボンバーマン！バイハドソン！.mp3
-  text: ボンバーマン！バイハドソン！
-  kana: ボンバーマン！バイハドソン！
-  id: uRlVbbSacro
-  time: 40:30
