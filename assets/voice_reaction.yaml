@@ -194,6 +194,11 @@
   kana: あいたー3
   id: 
   time: 
+- url: /static/voice/ｱｵｰ.mp3
+  text: ｱｵｰ
+  kana: アオー
+  id: TEG_jh-w_eo
+  time: 1:20:23
 - url: /static/voice/あたたたた、たぁ.mp3
   text: あたたたた、たぁ
   kana: あたたたた、たぁ
@@ -324,6 +329,11 @@
   kana: いっけー！
   id: LmC-BgpuhSc
   time: 1:43:22
+- url: /static/voice/いけそうでいけない！.mp3
+  text: いけそうでいけない！
+  kana: いけそうでいけない！
+  id: TEG_jh-w_eo
+  time: 55:44
 - url: /static/voice/いけない子ですね.mp3
   text: いけない子ですね
   kana: いけないこですね
@@ -434,6 +444,11 @@
   kana: うぉおおおう
   id: 7eH4Px4B1nQ
   time: 15:12
+- url: /static/voice/うぉほ.mp3
+  text: うぉほ
+  kana: うぉほ
+  id: TEG_jh-w_eo
+  time: 1:28:12
 - url: /static/voice/後ろ後ろ！.mp3
   text: 後ろ後ろ！
   kana: うしろうしろ！
@@ -514,6 +529,11 @@
   kana: うわぁっ
   id: JvEQs5PIOOI
   time: 1:33:41
+- url: /static/voice/うわくっさ.mp3
+  text: うわくっさ
+  kana: うわくっさ
+  id: TEG_jh-w_eo
+  time: 03:56
 - url: /static/voice/え～どうしよ～(ギャル).mp3
   text: え～どうしよ～(ギャル)
   kana: え～どうしよ～(ギャル)
@@ -659,6 +679,11 @@
   kana: おぉほっほっほっほ
   id: ITXgKYRjd-g
   time: 20:28
+- url: /static/voice/おおん.mp3
+  text: おおん
+  kana: おおん
+  id: TEG_jh-w_eo
+  time: 55:32
 - url: /static/voice/怒ってないですよ？.mp3
   text: 怒ってないですよ？
   kana: おこってないですよ？
@@ -885,6 +910,11 @@
   kana: がんばえ～
   id: EKi4DbkPEvQ
   time: 15:05
+- url: /static/voice/がんばれっ.mp3
+  text: がんばれっ
+  kana: がんばれっ
+  id: TEG_jh-w_eo
+  time: 11:25
 - url: /static/voice/勘弁してくださいよ～.mp3
   text: 勘弁してくださいよ～
   kana: かんべんしてくださいよ～
@@ -1195,6 +1225,11 @@
   kana: たまらんなぁおい
   id: Q42HqROlXGQ
   time: 1:26:28
+- url: /static/voice/だめぇー！.mp3
+  text: だめぇー！
+  kana: だめぇー！
+  id: TEG_jh-w_eo
+  time: 16:22
 - url: /static/voice/ダメでーす.mp3
   text: ダメでーす
   kana: ダメでーす

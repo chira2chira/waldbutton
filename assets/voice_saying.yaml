@@ -196,6 +196,11 @@
   kana: ae
   id: wn873wAMqdY
   time: 10:49
+- url: /static/voice/アタシ酔っちゃったかも～.mp3
+  text: アタシ酔っちゃったかも～
+  kana: アタシよっちゃったかも～
+  id: TEG_jh-w_eo
+  time: 1:19:15
 - url: /static/voice/あちゅまれー.mp3
   text: あちゅまれー
   kana: あちゅまれー
@@ -236,6 +241,11 @@
   kana: いじょうしゃのセンスあるかもよ！
   id: PxFfyS5k6IE
   time: 1:42:39
+- url: /static/voice/いただきまーす.mp3
+  text: いただきまーす
+  kana: いただきまーす
+  id: TEG_jh-w_eo
+  time: 03:34
 - url: /static/voice/いっぱいだいしゅき.mp3
   text: いっぱいだいしゅき
   kana: いっぱいだいしゅき
@@ -576,6 +586,11 @@
   kana: しがとなりあわせなんですね～
   id: UHO0pMg2EL0
   time: 1:33:44
+- url: /static/voice/死にまーーせん！.mp3
+  text: 死にまーーせん！
+  kana: しにまーーせん！
+  id: TEG_jh-w_eo
+  time: 1:23:34
 - url: /static/voice/死ぬ覚悟をしろ！.mp3
   text: 死ぬ覚悟をしろ！
   kana: しぬかくごをしろ！
@@ -802,6 +817,11 @@
   kana: おちついてばぶばぶできんやろがい
   id: LR4u8AvpiY0
   time: 2:50:03
+- url: /static/voice/南～無～.mp3
+  text: 南～無～
+  kana: な～む～
+  id: TEG_jh-w_eo
+  time: 07:15
 - url: /static/voice/なんなんですかね天上都市って.mp3
   text: なんなんですかね天上都市って
   kana: なんなんですかねてんじょうとしって
