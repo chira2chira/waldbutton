@@ -99,6 +99,11 @@
   kana: ひめい5
   id: p_u_x1SF_gU
   time:  1:11:22
+- url: /static/voice/悲鳴6.mp3
+  text: 悲鳴6
+  kana: ひめい6
+  id: t5Qo2tBKqiU
+  time: 55:17
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -494,6 +499,11 @@
   kana: ウフフゥ！
   id: zcElDP-gEa8
   time: 05:32
+- url: /static/voice/ウボァー！.mp3
+  text: ウボァー！
+  kana: ウボァー！
+  id: t5Qo2tBKqiU
+  time: 1:31:10
 - url: /static/voice/ウホッ！.mp3
   text: ウホッ！
   kana: ウホッ！
@@ -1070,6 +1080,11 @@
   kana: こわっ！
   id: F1atHr7rlQg
   time: 1:46:25
+- url: /static/voice/怖かったぁ.mp3
+  text: 怖かったぁ
+  kana: こわかったぁ
+  id: t5Qo2tBKqiU
+  time: 1:05:45
 - url: /static/voice/怖くないよー？.mp3
   text: 怖くないよー？
   kana: こわくないよー？
