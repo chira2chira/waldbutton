@@ -28,7 +28,6 @@ type RankingProps = {
 
 const Ranking: NextPage<RankingProps> = (props) => {
   const [favoriteOpen, setFavoriteOpen] = useState(false);
-  const rank1Count = props.ranking[0]?.count || 0;
 
   return (
     <>
@@ -55,86 +54,7 @@ const Ranking: NextPage<RankingProps> = (props) => {
           <H2>ランキング</H2>
           <p>直近1週間の再生数ランキング</p>
           <div>
-            {props.ranking.map((x, i) => {
-              const voice = props.voiceInfo.filter(
-                (v) => v.id === x.id && v.text === x.text
-              )[0];
-              return (
-                <div
-                  key={x.text}
-                  css={css`
-                    position: relative;
-
-                    & > button {
-                      text-shadow: 1px 1px 3px #ffffff;
-                    }
-                    .bp4-dark & > button {
-                      text-shadow: 1px 1px 2px #494949;
-                    }
-                  `}
-                >
-                  <div
-                    css={css`
-                      position: absolute;
-                      top: 0;
-                      bottom: 0;
-                      left: 0;
-                      right: 0;
-                      display: flex;
-                      justify-content: flex-end;
-                      align-items: center;
-                      width: ${(x.count / rank1Count) * 100 * 0.8}%;
-                      padding-right: 5px;
-                      border-width: 1px;
-                      border-style: solid;
-                      border-image: linear-gradient(to left, #f8eabb, white 40%)
-                        1;
-                      background: linear-gradient(to left, #fdf9e7, white 30%);
-
-                      .bp4-dark & {
-                        border-image: linear-gradient(
-                            to left,
-                            #f8eabb,
-                            ${Colors.DARK_GRAY3} 40%
-                          )
-                          1;
-                        background: linear-gradient(
-                          to left,
-                          #202b33,
-                          ${Colors.DARK_GRAY3} 30%
-                        );
-                      }
-                    `}
-                  >
-                    {i === 0 && (
-                      <img
-                        src="/static/svg/rank1.svg"
-                        alt="#1"
-                        width={22}
-                        height={22}
-                      />
-                    )}
-                    {i === 1 && (
-                      <img
-                        src="/static/svg/rank2.svg"
-                        alt="#2"
-                        width={22}
-                        height={22}
-                      />
-                    )}
-                    {i === 2 && (
-                      <img
-                        src="/static/svg/rank3.svg"
-                        alt="#3"
-                        width={22}
-                        height={22}
-                      />
-                    )}
-                  </div>
-                  <SimpleVoiceButton key={voice.url} voice={voice} />
-                </div>
-              );
-            })}
+            <RankingList voiceInfo={props.voiceInfo} ranking={props.ranking} />
           </div>
           <div
             css={css`
@@ -166,6 +86,89 @@ const Ranking: NextPage<RankingProps> = (props) => {
           </div>
         </Drawer>
       </Container>
+    </>
+  );
+};
+
+type RankingListProps = {
+  voiceInfo: VoiceInfo[];
+  ranking: RankingItem[];
+};
+
+const RankingList: React.FC<RankingListProps> = (props) => {
+  const rank1Count = props.ranking[0]?.count || 0;
+  let prevCount = rank1Count + 1;
+  let prevRank = 0;
+
+  return (
+    <>
+      {props.ranking.map((x, i) => {
+        const voice = props.voiceInfo.filter(
+          (v) => v.id === x.id && v.text === x.text
+        )[0];
+        const sameRank = x.count === prevCount;
+        const rank = sameRank ? prevRank : prevRank + 1;
+        prevCount = x.count;
+        prevRank = rank;
+        return (
+          <div
+            key={x.text}
+            css={css`
+              position: relative;
+
+              & > button {
+                text-shadow: 1px 1px 3px #ffffff;
+              }
+              .bp4-dark & > button {
+                text-shadow: 1px 1px 2px #494949;
+              }
+            `}
+          >
+            <div
+              css={css`
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: ${(x.count / rank1Count) * 100 * 0.8}%;
+                padding-right: 5px;
+                border-width: 1px;
+                border-style: solid;
+                border-image: linear-gradient(to left, #f8eabb, white 40%) 1;
+                background: linear-gradient(to left, #fdf9e7, white 30%);
+
+                .bp4-dark & {
+                  border-image: linear-gradient(
+                      to left,
+                      #f8eabb,
+                      ${Colors.DARK_GRAY3} 40%
+                    )
+                    1;
+                  background: linear-gradient(
+                    to left,
+                    #202b33,
+                    ${Colors.DARK_GRAY3} 30%
+                  );
+                }
+              `}
+            >
+              {!sameRank && rank < 4 && (
+                <img
+                  src={`/static/svg/rank${rank}.svg`}
+                  alt={`#${rank}`}
+                  width={22}
+                  height={22}
+                />
+              )}
+            </div>
+            <SimpleVoiceButton key={voice.url} voice={voice} />
+          </div>
+        );
+      })}
     </>
   );
 };
