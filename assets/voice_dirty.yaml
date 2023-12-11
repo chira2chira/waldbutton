@@ -1,3 +1,8 @@
+- url: /static/voice/僕、口悪くないですよぉ？.mp3
+  text: 僕、口悪くないですよぉ？
+  kana: ぼく、くちわるくないですよぉ？
+  id: qWACnhR7TCQ
+  time: 27:44
 - url: /static/voice/生きてて楽しいのかな？.mp3
   text: 生きてて楽しいのかな？
   kana: いきててたのしいのかな？
@@ -173,6 +178,11 @@
   kana: ぶっつぶすか
   id: k1uk992r7_Y
   time: 50:27
+- url: /static/voice/ほんとにアホがいっぱいいて 困りますねぇ.mp3
+  text: ほんとにアホがいっぱいいて 困りますねぇ
+  kana: ほんとにアホがいっぱいいて こまりますねぇ
+  id: qWACnhR7TCQ
+  time: 57:39
 - url: /static/voice/マナー違反に対するマナー違反はオッケーとされております.mp3
   text: マナー違反に対するマナー違反は･･･
   kana: マナーいはんにたいするマナーいはんはオッケーとされております

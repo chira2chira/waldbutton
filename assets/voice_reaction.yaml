@@ -9,6 +9,11 @@
   kana: ワルー
   id: yNJ-Hi1KEB4
   time: 12:24
+- url: /static/voice/ワルゥ～.mp3
+  text: ワルゥ～
+  kana: ワルゥ～
+  id: qWACnhR7TCQ
+  time: 1:19:10
 - url: /static/voice/笑い1.mp3
   text: 笑い1
   kana: わらい1
@@ -259,6 +264,11 @@
   kana: あわやー！
   id: lRfWYnOfLnA
   time: 44:49
+- url: /static/voice/あん！.mp3
+  text: あん！
+  kana: あん！
+  id: qWACnhR7TCQ
+  time: 1:14:00
 - url: /static/voice/あんたはえらい！.mp3
   text: あんたはえらい！
   kana: あんたはえらい！
@@ -454,6 +464,11 @@
   kana: うぉほ
   id: TEG_jh-w_eo
   time: 1:28:12
+- url: /static/voice/ウケるね.mp3
+  text: ウケるね
+  kana: ウケるね
+  id: qWACnhR7TCQ
+  time: 38:42
 - url: /static/voice/後ろ後ろ！.mp3
   text: 後ろ後ろ！
   kana: うしろうしろ！
@@ -514,6 +529,11 @@
   kana: うほほ！
   id: Yd51tRPEjmY
   time: 2:34:10
+- url: /static/voice/うるさいほんとに.mp3
+  text: うるさいほんとに
+  kana: うるさいほんとに
+  id: qWACnhR7TCQ
+  time: 23:42
 - url: /static/voice/うるさいワルよ.mp3
   text: うるさいワルよ
   kana: うるさいワルよ
