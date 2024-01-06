@@ -74,6 +74,11 @@
   kana: わらい12
   id: qxg9t2UMCbs
   time: 1:02:20
+- url: /static/voice/笑い13.mp3
+  text: 笑い13
+  kana: わらい13
+  id: W-IMhGDHqB0
+  time: 41:29
 - url: /static/voice/高笑い.mp3
   text: 高笑い
   kana: たかわらい
@@ -489,6 +494,11 @@
   kana: うﾞっ！
   id: wn873wAMqdY
   time: 44:30
+- url: /static/voice/う、う、うわああああああ.mp3
+  text: う、う、うわああああああ
+  kana: う、う、うわああああああ
+  id: W-IMhGDHqB0
+  time: 06:20
 - url: /static/voice/うっかりうっかり.mp3
   text: うっかりうっかり
   kana: うっかりうっかり
@@ -1175,6 +1185,11 @@
   kana: しょうもなー
   id: JSyDfWUnp_g
   time: 47:22
+- url: /static/voice/すっげぇ～.mp3
+  text: すっげぇ～
+  kana: すっげぇ～
+  id: W-IMhGDHqB0
+  time: 41:35
 - url: /static/voice/すごいすごいすごいすごい.mp3
   text: すごいすごいすごいすごい
   kana: すごいすごいすごいすごい
@@ -1775,6 +1790,11 @@
   kana: ほんまににぎやかやわぁ
   id: M3x30ywSolU
   time: 1:33:37
+- url: /static/voice/マ？.mp3
+  text: マ？
+  kana: マ？
+  id: W-IMhGDHqB0
+  time: 19:33
 - url: /static/voice/まぁまぁまぁまぁ.mp3
   text: まぁまぁまぁまぁ
   kana: まぁまぁまぁまぁ
@@ -1860,6 +1880,11 @@
   kana: むり！むりむり！
   id: 1I8zkZVNIRc
   time: 07:04
+- url: /static/voice/も～.mp3
+  text: も～
+  kana: も～
+  id: W-IMhGDHqB0
+  time: 29:07
 - url: /static/voice/も～！.mp3
   text: も～！
   kana: も～！
