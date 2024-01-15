@@ -181,6 +181,7 @@ const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
             >
               <div css={thumbBox}>
                 <img
+                  key={videoInfo.id}
                   css={thumbImage}
                   src={videoInfo.thumbnailUrl}
                   width={320}
