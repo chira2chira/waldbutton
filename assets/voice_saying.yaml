@@ -822,6 +822,11 @@
   kana: なにいっているかわからないんですよね。ぼそぼそいってて
   id: MtX4AKoF8BA
   time: 1:06:40
+- url: /static/voice/何がまずいか言ってみろよ！.mp3
+  text: 何がまずいか言ってみろよ！
+  kana: なにがまずいかいってみろよ！
+  id: AJCJIteyko8
+  time: 1:20:25
 - url: /static/voice/何が悪かったんだよぉ！.mp3
   text: 何が悪かったんだよぉ！
   kana: なにがわるかったんだよぉ！
@@ -977,6 +982,11 @@
   kana: はよおわらんかなこのゲーム
   id: p_u_x1SF_gU
   time: 1:42:41
+- url: /static/voice/パルは友達！パルは友達！.mp3
+  text: パルは友達！パルは友達！
+  kana: パルはともだち！パルはともだち！
+  id: AJCJIteyko8
+  time: 1:17:20
 - url: /static/voice/犯罪じゃないんですよ。事故です.mp3
   text: 犯罪じゃないんですよ。事故です
   kana: はんざいじゃないんですよ。じこです
@@ -1052,11 +1062,21 @@
   kana: ぼくのほんもでたりしないのかなー
   id: lRfWYnOfLnA
   time: 09:57
+- url: /static/voice/僕は汚物じゃないワル.mp3
+  text: 僕は汚物じゃないワル
+  kana: ぼくはおぶつじゃないワル
+  id: AJCJIteyko8
+  time: 2:25:02
 - url: /static/voice/僕はそっちの方が好きだよ.mp3
   text: 僕はそっちの方が好きだよ
   kana: ぼくはそっちのほうがすきだよ
   id: Aj04AMJ74f8
   time: 1:16:24
+- url: /static/voice/僕は悪くないワル.mp3
+  text: 僕は悪くないワル
+  kana: ぼくはわるくないワル
+  id: AJCJIteyko8
+  time: 1:58:17
 - url: /static/voice/僕も好きー.mp3
   text: 僕も好きー
   kana: ぼくもすきー
