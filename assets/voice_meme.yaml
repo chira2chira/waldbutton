@@ -203,6 +203,11 @@
   kana: たーる
   id: G0InB_zJGPc
   time: 1:43:30
+- url: /static/voice/ちんぽっぽぼいんっ.mp3
+  text: (*‘ω‘ *)
+  kana: ちんぽっぽぼいんっ
+  id: Do1RPJRtINA
+  time: 2:26:12
 - url: /static/voice/ってコト！？.mp3
   text: ってコト！？
   kana: ってコト！？(ちいかわ)
@@ -233,6 +238,16 @@
   kana: フゥン？(ちいかわ)
   id: OIoXtBWmb7c
   time: 26:44
+- url: /static/voice/説教猫(猫ミーム).mp3
+  text: 説教猫(猫ミーム)
+  kana: せっきょうねこ(ねこミーム)
+  id: Do1RPJRtINA
+  time: 2:26:45
+- url: /static/voice/ヤギ(猫ミーム).mp3
+  text: ヤギ(猫ミーム)
+  kana: ヤギ(ねこミーム)
+  id: Do1RPJRtINA
+  time: 2:29:01
 - url: /static/voice/ティーダの＊＊＊気持ちよすぎだろ！.mp3
   text: ティーダの███気持ちよすぎだろ！
   kana: ティーダのちんぽきもちよすぎだろ！
@@ -553,3 +568,8 @@
   kana: しずかちゃん(きゅう)のモノマネ
   id: You0ZCauhKw
   time: 25:18
+- url: /static/voice/魔人ブウのモノマネ.mp3
+  text: 魔人ブウのモノマネ
+  kana: まじんブウのモノマネ
+  id: Do1RPJRtINA
+  time: 2:58:43

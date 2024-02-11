@@ -331,6 +331,11 @@
   kana: おしっこもれそう
   id: p_u_x1SF_gU
   time: 1:45:03
+- url: /static/voice/おねがーい！.mp3
+  text: おねがーい！
+  kana: おねがーい！
+  id: cOV3J8-iTVk
+  time: 1:04:18
 - url: /static/voice/お鼻ぷに～.mp3
   text: お鼻ぷに～
   kana: おはなぷに～
@@ -776,6 +781,11 @@
   kana: ちょっとアレじゃないですか？
   id: -YNS96fFNBA
   time: 54:16
+- url: /static/voice/手繋いで！.mp3
+  text: 手繋いで！
+  kana: てつないで！
+  id: cOV3J8-iTVk
+  time: 51:53
 - url: /static/voice/電気消すね.mp3
   text: 電気消すね
   kana: でんきけすね

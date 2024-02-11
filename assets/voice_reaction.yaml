@@ -114,6 +114,11 @@
   kana: ひめい6
   id: t5Qo2tBKqiU
   time: 55:17
+- url: /static/voice/悲鳴7.mp3
+  text: 悲鳴7
+  kana: ひめい7
+  id: cOV3J8-iTVk
+  time: 43:07
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -289,6 +294,11 @@
   kana: あんたはえらい！
   id: Aj04AMJ74f8
   time: 1:29:24
+- url: /static/voice/いーい！.mp3
+  text: いーい！
+  kana: いーい！
+  id: cOV3J8-iTVk
+  time: 41:49
 - url: /static/voice/いい感じもう最高っ.mp3
   text: いい感じもう最高っ
   kana: いいかんじもうさいこうっ
@@ -609,6 +619,11 @@
   kana: っエィ～～
   id: 2p-eh3pmXEE
   time: 21:04
+- url: /static/voice/ええっ！？.mp3
+  text: ええっ！？
+  kana: ええっ！？
+  id: cOV3J8-iTVk
+  time: 11:42
 - url: /static/voice/ええーん.mp3
   text: ええーん
   kana: ええーん
@@ -980,6 +995,11 @@
   kana: かんべんしてくださいよ～
   id: 1HTlYnHUGo8
   time: 1:15:33
+- url: /static/voice/勘弁してくれぇ！.mp3
+  text: 勘弁してくれぇ！
+  kana: かんべんしてくれぇ！
+  id: cOV3J8-iTVk
+  time: 1:04:07
 - url: /static/voice/汚いです！.mp3
   text: 汚いです！
   kana: きたいです！
@@ -1400,6 +1420,11 @@
   kana: で？
   id: -WGXZfvHX3I
   time: 1:50:42
+- url: /static/voice/低俗！.mp3
+  text: 低俗！
+  kana: ていぞく！
+  id: cOV3J8-iTVk
+  time: 23:21
 - url: /static/voice/で、でたー！.mp3
   text: で、でたー！
   kana: で、でたー！
