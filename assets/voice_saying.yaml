@@ -106,6 +106,11 @@
   kana: くしゃみ(えいぎょう)
   id: wVRu9Nj5EmU
   time: 1:58:45
+- url: /static/voice/くしゃみ(っちゃ～).mp3
+  text: くしゃみ(っちゃ～)
+  kana: くしゃみ(っちゃ～)
+  id: K71e6dR1QBI
+  time: 3:17:12
 - url: /static/voice/へっくち.mp3
   text: へっくち
   kana: へっくち
@@ -131,6 +136,11 @@
   kana: すーはーすーはー
   id: LmC-BgpuhSc
   time: 1:27:29
+- url: /static/voice/伸び.mp3
+  text: 伸び
+  kana: のび
+  id: K71e6dR1QBI
+  time: 4:16:02
 - url: /static/voice/嘘泣き.mp3
   text: 嘘泣き
   kana: うそなき
@@ -271,11 +281,21 @@
   kana: いないっつってんだろうが！
   id: fUzS16b7Mb0
   time: 1:53:05
+- url: /static/voice/犬吸お.mp3
+  text: 犬吸お
+  kana: いぬすお
+  id: tZmFdhHvvo8
+  time: 1:06:07
 - url: /static/voice/うぇいうぇいうぇいうぇーい.mp3
   text: うぇいうぇいうぇいうぇーい
   kana: うぇいうぇいうぇいうぇーい
   id: RJee49xGlJc
   time: 1:07:48
+- url: /static/voice/動くな！.mp3
+  text: 動くな！
+  kana: うごくな！
+  id: K71e6dR1QBI
+  time: 1:20:50
 - url: /static/voice/うちくる？.mp3
   text: うちくる？
   kana: うちくる？
@@ -832,6 +852,11 @@
   kana: なにいっているかわからないんですよね。ぼそぼそいってて
   id: MtX4AKoF8BA
   time: 1:06:40
+- url: /static/voice/何言ってんだこいつはもう.mp3
+  text: 何言ってんだこいつはもう
+  kana: なにいってんだこいつはもう
+  id: tZmFdhHvvo8
+  time: 1:58:43
 - url: /static/voice/何がまずいか言ってみろよ！.mp3
   text: 何がまずいか言ってみろよ！
   kana: なにがまずいかいってみろよ！
@@ -1142,6 +1167,11 @@
   kana: ママー
   id: P2gSZ8qzoT0
   time: 25:08
+- url: /static/voice/ママが言うからやる気なくしたぁ！.mp3
+  text: ママが言うからやる気なくしたぁ！
+  kana: ママがいうからやるきなくしたぁ！
+  id: tZmFdhHvvo8
+  time: 1:10:10
 - url: /static/voice/マン↓ムー↑.mp3
   text: マン↓ムー↑
   kana: マンムー

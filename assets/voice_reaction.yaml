@@ -174,6 +174,11 @@
   kana: あぁぁそんなぁ
   id: MtX4AKoF8BA
   time: 28:50
+- url: /static/voice/あ～いい感じいい感じ.mp3
+  text: あ～いい感じいい感じ
+  kana: あ～いい感じいい感じ
+  id: tZmFdhHvvo8
+  time: 2:04:20
 - url: /static/voice/あー痛い痛い痛い痛い.mp3
   text: あー痛い痛い痛い痛い
   kana: あーいたいいたいいたいいたい
@@ -339,6 +344,11 @@
   kana: いいよ！
   id: pr4_Y47DprM
   time: 3:57:35
+- url: /static/voice/いいよ！(キレ).mp3
+  text: いいよ！(キレ)
+  kana: いいよ！(キレ)
+  id: tZmFdhHvvo8
+  time: 14:25
 - url: /static/voice/いぇいいぇい.mp3
   text: いぇいいぇい
   kana: いぇいいぇい
