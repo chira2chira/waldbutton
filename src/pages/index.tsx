@@ -30,6 +30,7 @@ import Container from "../templates/Container";
 import CommonMeta from "../components/CommonMeta";
 import VolumeControl from "../components/VolumeControl";
 import Tips from "../components/Tips";
+import InviteBot from "../components/InviteBot";
 import CategoryCard from "../components/CategoryCard";
 import VideoCard from "../components/VideoCard";
 import VideoInfo from "../components/VideoInfo";
@@ -244,6 +245,9 @@ const Home: NextPage<HomeProps> = (props) => {
             gap: 8px;
           `}
         >
+          <div>
+            <InviteBot />
+          </div>
           <div>
             <Tips />
           </div>
