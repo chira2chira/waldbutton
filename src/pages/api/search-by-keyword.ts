@@ -24,6 +24,6 @@ export default async function handler(
     });
   } catch (err) {
     console.log(err);
-    return res.status(500).send("Error revalidating");
+    return res.status(500).send("Error");
   }
 }
