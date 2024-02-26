@@ -504,8 +504,12 @@ export const getStaticProps: GetStaticProps<HomeProps> = async (context) => {
   };
 };
 
-function filterList(filter: string) {
-  const filterKana = moji(filter).convert("HG", "KK").toString().toLowerCase();
+export function filterList(filter: string) {
+  const filterKana = moji(filter)
+    .convert("HG", "KK")
+    .toString()
+    .toLowerCase()
+    .trim();
   return function (item: VoiceInfo) {
     if (filter === "") {
       return [];
