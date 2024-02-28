@@ -43,10 +43,7 @@ const CommonMeta: React.VFC<CommonMetaProps> = (props) => {
         <title>{`${isProd ? "" : "[DEV]"}${props.title}`}</title>
         <meta
           name="description"
-          content={
-            props.description ||
-            "ワルトボタンはVTuber逢魔牙ワルトの音声ボタンです。ワルトくんの様々なボイスを好きなだけ聞けます。"
-          }
+          content="ワルトボタンはVTuber逢魔牙ワルトの音声ボタンです。ワルトくんの様々なボイスを好きなだけ聞けます。"
         />
         <meta
           name="keywords"
@@ -56,7 +53,10 @@ const CommonMeta: React.VFC<CommonMetaProps> = (props) => {
         <meta property="og:url" content="https://waldbutton.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={props.title} />
-        <meta property="og:description" content="逢魔牙ワルトの音声ボタン" />
+        <meta
+          property="og:description"
+          content={props.description || "逢魔牙ワルトの音声ボタン"}
+        />
         <meta property="og:image" content={getCardImage(props.cardType)} />
         <meta name="twitter:card" content={props.cardType} />
         {props.cardType === "player" && (
