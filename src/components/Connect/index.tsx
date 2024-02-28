@@ -39,7 +39,7 @@ const Connect: React.FC = (props) => {
               background: #1c2127;
               box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
               align-items: center;
-              gap: 5px;
+              gap: 10px;
               color: #fa999c;
               cursor: pointer;
             `}
@@ -47,7 +47,7 @@ const Connect: React.FC = (props) => {
           >
             <img
               src="/static/svg/discord.svg"
-              height="17"
+              height="28"
               alt="Discordアイコン"
             />
             Botとの接続を切る
