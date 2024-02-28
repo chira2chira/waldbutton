@@ -5,6 +5,7 @@ import { useContext, useEffect } from "react";
 import { ConnectContext } from "../../../providers/ConnectProvider";
 import { SessionData, sessionOptions } from "../../../utils/session";
 import CommonMeta from "../../../components/CommonMeta";
+import { css } from "@emotion/react";
 
 type GetIdProps = {
   success: boolean;
@@ -23,6 +24,28 @@ const GetId: NextPage<GetIdProps> = (props) => {
   return (
     <>
       <CommonMeta title="ワルトボタン" cardType="summary" />
+
+      <div
+        css={css`
+          max-width: 100vw;
+          max-height: 100vh;
+          padding: 0 3vw;
+          background: #182026;
+          color: #ffffff;
+        `}
+      >
+        <div
+          css={css`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+          `}
+        >
+          <p>接続中</p>
+        </div>
+      </div>
     </>
   );
 };
