@@ -19,6 +19,12 @@ export const stickyButton = css`
   }
 `;
 
+export const stickyInner = css`
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+`;
+
 export const stickyAprilFoolButton = css`
   position: sticky;
   bottom: 10px;

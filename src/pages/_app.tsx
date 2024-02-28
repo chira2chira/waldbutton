@@ -10,6 +10,7 @@ import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import VolumeProvider from "../providers/VolumeProvider";
 import FavoriteProvider from "../providers/FavoriteProvider";
+import ConnectProvider from "../providers/ConnectProvider";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import usePageView from "../hooks/usePageView";
 import useDarkMode from "../hooks/useDarkMode";
@@ -42,7 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GoogleAnalytics />
       <VolumeProvider>
         <FavoriteProvider>
-          <Component {...pageProps} />
+          <ConnectProvider>
+            <Component {...pageProps} />
+          </ConnectProvider>
         </FavoriteProvider>
       </VolumeProvider>
     </>

@@ -17,6 +17,7 @@
     "@google-cloud/bigquery": "^5.10.0",
     "dayjs": "^1.10.7",
     "googleapis": "^91.0.0",
+    "iron-session": "^8.0.1",
     "js-yaml": "^4.1.0",
     "lodash.throttle": "^4.1.1",
     "moji": "^0.5.1",

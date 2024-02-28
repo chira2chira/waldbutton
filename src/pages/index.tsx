@@ -13,6 +13,7 @@ import {
 } from "@blueprintjs/core";
 import React, {
   useCallback,
+  useContext,
   useEffect,
   useMemo,
   useRef,
@@ -37,6 +38,7 @@ import VideoInfo from "../components/VideoInfo";
 import TweetButton from "../components/TweetButton";
 import Favorite from "../components/Favorite";
 import OpenFavoriteButton from "../components/OpenFavoriteButton";
+import Connect from "../components/Connect";
 
 export type VoiceCategory =
   | "greetings"
@@ -463,10 +465,13 @@ const Home: NextPage<HomeProps> = (props) => {
         </div>
 
         <div css={styles.stickyButton}>
-          <OpenFavoriteButton
-            drawerOpened={favoriteOpen}
-            onClick={() => setFavoriteOpen(true)}
-          />
+          <div css={styles.stickyInner}>
+            <OpenFavoriteButton
+              drawerOpened={favoriteOpen}
+              onClick={() => setFavoriteOpen(true)}
+            />
+            <Connect />
+          </div>
         </div>
 
         <VideoInfo

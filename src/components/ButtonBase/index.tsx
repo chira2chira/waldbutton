@@ -10,6 +10,7 @@ import { Button, ButtonProps, IconName, MaybeElement } from "@blueprintjs/core";
 import Loading from "../Loading";
 import { VolumeContext } from "../../providers/VolumeProvider";
 import { FavoriteContext } from "../../providers/FavoriteProvider";
+import { ConnectContext } from "../../providers/ConnectProvider";
 import { BottomToaster } from "../../utils/toast";
 import { VoiceBase } from "../../pages";
 
@@ -55,6 +56,7 @@ const ButtonBase: React.FC<VoiceButtonProps> = (props) => {
   const audio = useRef<HTMLAudioElement>(null);
   const [status, setStatus] = useState<Status>("pause");
   const { volume } = useContext(VolumeContext);
+  const { connecting, playDiscord } = useContext(ConnectContext);
   const { editing, addFavorite, removeFavorite, inFavorite } =
     useContext(FavoriteContext);
 
@@ -64,7 +66,7 @@ const ButtonBase: React.FC<VoiceButtonProps> = (props) => {
     }
   }, [volume]);
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (editing) {
       if (inFavorite(voice)) {
         removeFavorite(voice);
@@ -74,6 +76,12 @@ const ButtonBase: React.FC<VoiceButtonProps> = (props) => {
       return;
     } else if (showVideoInfo) {
       props.onVideoInfoOpen();
+      return;
+    } else if (connecting) {
+      setStatus("buffer");
+      playDiscord(voice).then(() => {
+        setStatus("pause");
+      });
       return;
     }
 
