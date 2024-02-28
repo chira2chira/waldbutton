@@ -238,8 +238,8 @@ const PokemonQuiz: React.FC<PokemonQuizProps> = (props) => {
               color: #5f6b7c;
             }
 
-            .bp4-dark &:any-link,
-            .bp4-dark &&:hover {
+            .bp5-dark &:any-link,
+            .bp5-dark &&:hover {
               color: #8f99a8;
             }
           `}

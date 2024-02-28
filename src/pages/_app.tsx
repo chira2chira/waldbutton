@@ -1,7 +1,6 @@
 import "normalize.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+// import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { FocusStyleManager } from "@blueprintjs/core";
@@ -33,9 +32,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         dangerouslySetInnerHTML={{
           __html: `document.addEventListener("DOMContentLoaded", () => {
             if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-              document.body.className = "bp4-dark";
+              document.body.className = "bp5-dark";
             } else {
-              document.body.className = "bp4-body";
+              document.body.className = "bp5-body";
             }
           });`,
         }}

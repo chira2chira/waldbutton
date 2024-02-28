@@ -295,7 +295,7 @@ const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
                   color: #182026;
                 }
 
-                .bp4-dark & {
+                .bp5-dark & {
                   &:link,
                   &:visited {
                     color: #f5f8fa;

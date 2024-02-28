@@ -25,7 +25,7 @@ const switchBox = css`
     border-radius: 0 3px 0 3px;
     background: #ffffff;
 
-    .bp4-dark & {
+    .bp5-dark & {
       background: ${Colors.DARK_GRAY3};
     }
   }

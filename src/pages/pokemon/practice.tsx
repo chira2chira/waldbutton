@@ -89,12 +89,12 @@ const Practice: NextPage<PracticeProps> = (props) => {
               text-align: right;
             `}
           >
-            <div className="bp4-html-select">
+            <div className="bp5-html-select">
               <select onChange={handleSortChange}>
                 <option value="id">ポケモン図鑑順</option>
                 <option value="name">五十音順</option>
               </select>
-              <span className="bp4-icon bp4-icon-chevron-down"></span>
+              <span className="bp5-icon bp5-icon-chevron-down"></span>
             </div>
           </div>
 

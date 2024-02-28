@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { Icon } from "@blueprintjs/core";
-import { Tooltip2 } from "@blueprintjs/popover2";
+import { Tooltip } from "@blueprintjs/core";
 
 const OfferButton: React.VFC = () => {
   const [stickyOpen, setStickyOpen] = useState(true);
@@ -17,7 +17,7 @@ const OfferButton: React.VFC = () => {
   }, [handleScroll]);
 
   return (
-    <Tooltip2 content="ネタ提供" isOpen={stickyOpen} placement="top">
+    <Tooltip content="ネタ提供" isOpen={stickyOpen} placement="top">
       <a
         css={css`
           display: flex;
@@ -45,7 +45,7 @@ const OfferButton: React.VFC = () => {
           color="#ffffff"
         />
       </a>
-    </Tooltip2>
+    </Tooltip>
   );
 };
 

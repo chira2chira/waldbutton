@@ -3,7 +3,6 @@ import { useContext, useEffect } from "react";
 import { ConnectContext } from "../../providers/ConnectProvider";
 import { BottomToaster } from "../../utils/toast";
 import { css } from "@emotion/react";
-import { Button } from "@blueprintjs/core";
 
 const Connect: React.FC = (props) => {
   const { query } = useRouter();

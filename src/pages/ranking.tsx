@@ -119,7 +119,7 @@ const RankingList: React.FC<RankingListProps> = (props) => {
               & > button {
                 text-shadow: 1px 1px 3px #ffffff;
               }
-              .bp4-dark & > button {
+              .bp5-dark & > button {
                 text-shadow: 1px 1px 2px #494949;
               }
             `}
@@ -141,7 +141,7 @@ const RankingList: React.FC<RankingListProps> = (props) => {
                 border-image: linear-gradient(to left, #f8eabb, white 40%) 1;
                 background: linear-gradient(to left, #fdf9e7, white 30%);
 
-                .bp4-dark & {
+                .bp5-dark & {
                   border-image: linear-gradient(
                       to left,
                       #f8eabb,

@@ -173,7 +173,7 @@ const ButtonBase: React.FC<VoiceButtonProps> = (props) => {
                 0s linear;
               z-index: -1;
 
-              .bp4-dark & {
+              .bp5-dark & {
                 background: linear-gradient(
                   90deg,
                   rgba(255, 255, 255, 0) 40%,
