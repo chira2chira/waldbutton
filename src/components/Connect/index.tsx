@@ -17,7 +17,7 @@ const Connect: React.FC = (props) => {
         intent: connecting ? "success" : "danger",
       });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -28,32 +28,30 @@ const Connect: React.FC = (props) => {
             display: inline-block;
           `}
         >
-          <Button
+          <button
             css={css`
               display: flex;
               padding: 0 10px;
               height: 3.5em;
               overflow: hidden;
-              border: none;
+              border: 1px solid #cd4246;
               border-radius: 10px;
               background: #1c2127;
               box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
               align-items: center;
+              gap: 5px;
+              color: #fa999c;
               cursor: pointer;
-              transition: width 0.5s ease-in-out;
             `}
-            icon={
-              <img
-                src="/static/svg/discord.svg"
-                height="17"
-                alt="Discordアイコン"
-              />
-            }
-            intent="danger"
             onClick={disconnect}
           >
+            <img
+              src="/static/svg/discord.svg"
+              height="17"
+              alt="Discordアイコン"
+            />
             Botとの接続を切る
-          </Button>
+          </button>
         </div>
       )}
     </>
