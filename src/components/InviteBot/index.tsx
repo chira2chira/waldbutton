@@ -44,10 +44,14 @@ const InviteBot: React.VFC = () => {
             ワルトボタンbotをDiscordサーバーに招待すると、ボイスチャットにワルトボタンの音声を流すことができます。
           </p>
           <p className="bp4-running-text">
-            botを招待し、<code>/search キーワード</code>{" "}
-            をチャットすることでボタンを検索することができます。
+            <code>/search キーワード</code>{" "}
+            をチャットするとボタンを検索することができます。
             <br />
             検索結果からボタンを選択するとボイスチャンネルから音声が流れます（ボイスチャンネルに参加している状態で選択しないと流れません）
+          </p>
+          <p className="bp4-running-text">
+            <code>/connect</code>{" "}
+            をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。
           </p>
           <img
             style={{ width: "100%" }}
