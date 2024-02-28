@@ -4,6 +4,7 @@ import { isProd } from "../../utils/env";
 
 type CommonMetaProps = {
   title: string;
+  description?: string;
   cardType: "summary" | "summary_large_image" | "player";
   playerUrl?: string;
   useTwitterWidget?: boolean;
@@ -42,7 +43,10 @@ const CommonMeta: React.VFC<CommonMetaProps> = (props) => {
         <title>{`${isProd ? "" : "[DEV]"}${props.title}`}</title>
         <meta
           name="description"
-          content="ワルトボタンはVTuber逢魔牙ワルトの音声ボタンです。ワルトくんの様々なボイスを好きなだけ聞けます。"
+          content={
+            props.description ||
+            "ワルトボタンはVTuber逢魔牙ワルトの音声ボタンです。ワルトくんの様々なボイスを好きなだけ聞けます。"
+          }
         />
         <meta
           name="keywords"

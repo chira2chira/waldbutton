@@ -12,7 +12,11 @@ const Connect: NextPage = () => {
 
   return (
     <>
-      <CommonMeta title="ワルトボタンと接続する" cardType="summary" />
+      <CommonMeta
+        title="ワルトボタンと接続する"
+        description="※このリンクは1回のみ有効"
+        cardType="summary"
+      />
     </>
   );
 };
