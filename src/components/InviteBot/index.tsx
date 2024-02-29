@@ -43,22 +43,6 @@ const InviteBot: React.VFC = () => {
           <p>
             ワルトボタンbotをDiscordサーバーに招待すると、ボイスチャットにワルトボタンの音声を流すことができます。
           </p>
-          <p className="bp5-running-text">
-            <code>/search キーワード</code>{" "}
-            をチャットするとボタンを検索することができます。
-            <br />
-            検索結果からボタンを選択するとボイスチャンネルから音声が流れます（ボイスチャンネルに参加している状態で選択しないと流れません）
-          </p>
-          <p className="bp5-running-text">
-            <code>/connect</code>{" "}
-            をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。
-          </p>
-          <img
-            style={{ width: "100%" }}
-            src="/static/image/discord-play.png"
-            alt="ワルトボタンbot"
-            loading="lazy"
-          />
           <div
             css={css`
               text-align: center;
@@ -66,7 +50,7 @@ const InviteBot: React.VFC = () => {
           >
             <a
               css={css`
-                margin: 20px 0 0;
+                margin: 10px 0 20px;
                 padding: 13px 15px;
                 display: inline-block;
                 font-size: 120%;
@@ -87,6 +71,28 @@ const InviteBot: React.VFC = () => {
               ワルトボタンbotをDiscordに招待する
             </a>
           </div>
+          <p className="bp5-running-text">
+            <code>/search キーワード</code>{" "}
+            をチャットするとボタンを検索することができます。
+            <br />
+            検索結果からボタンを選択するとボイスチャンネルから音声が流れます（ボイスチャンネルに参加している状態で選択しないと流れません）
+          </p>
+          <img
+            style={{ width: "80%", margin: "0 auto 10px", display: "block" }}
+            src="/static/image/discord-play.png"
+            alt="ワルトボタンbotの/searchコマンドの使用例"
+            loading="lazy"
+          />
+          <p className="bp5-running-text">
+            <code>/connect</code>{" "}
+            をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。
+          </p>
+          <img
+            style={{ width: "80%", margin: "0 auto 5px", display: "block" }}
+            src="/static/image/discord-connect.png"
+            alt="ワルトボタンbotの/connectコマンドの使用例"
+            loading="lazy"
+          />
         </div>
       </Dialog>
     </div>
