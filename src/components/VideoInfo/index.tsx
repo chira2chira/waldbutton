@@ -139,9 +139,6 @@ const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
     <Dialog isOpen={isOpen} onClose={props.onClose}>
       <div
         className={Classes.DIALOG_BODY}
-        css={css`
-          margin-bottom: 0;
-        `}
       >
         {!videoInfo || videoInfo.title === "" ? (
           <div>
