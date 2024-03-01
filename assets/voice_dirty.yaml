@@ -43,6 +43,11 @@
   kana: おくちわるくないもん！
   id: 2Ks5zPEp1gQ
   time: 2:15:05
+- url: /static/voice/お前も死にてえのか？.mp3
+  text: お前も死にてえのか？
+  kana: おまえもしにてえのか？
+  id: Y1qhb3LKoHY
+  time: 1:40:34
 - url: /static/voice/表出ろや.mp3
   text: 表出ろや
   kana: おもてでろや
@@ -193,6 +198,11 @@
   kana: ほんとにアホがいっぱいいて こまりますねぇ
   id: qWACnhR7TCQ
   time: 57:39
+- url: /static/voice/ほんとマジで感じ悪いわ.mp3
+  text: ほんとマジで感じ悪いわ
+  kana: ほんとマジでかんじわるいわ
+  id: Y1qhb3LKoHY
+  time: 1:40:31
 - url: /static/voice/マナー違反に対するマナー違反はオッケーとされております.mp3
   text: マナー違反に対するマナー違反は･･･
   kana: マナーいはんにたいするマナーいはんはオッケーとされております

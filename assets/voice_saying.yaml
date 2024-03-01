@@ -1062,6 +1062,11 @@
   kana: ベイビィポケモンつかってらぁｗ
   id: 2p-eh3pmXEE
   time: 55:43
+- url: /static/voice/下手したら死ぬぞ.mp3
+  text: 下手したら死ぬぞ
+  kana: へたしたらしぬぞ
+  id: Y1qhb3LKoHY
+  time: 1:40:37
 - url: /static/voice/膀胱のサイズが小さすぎる！.mp3
   text: 膀胱のサイズが小さすぎる！
   kana: ぼうこうのサイズがちいさすぎる！
@@ -1162,6 +1167,11 @@
   kana: まったくきおくにございません！
   id: oi_UdlACQ_I
   time: 1:12:58
+- url: /static/voice/間違えたワル！.mp3
+  text: 間違えたワル！
+  kana: 間違えたワル！
+  id: QHLb14XCAPY
+  time: 1:30:49
 - url: /static/voice/ママー.mp3
   text: ママー
   kana: ママー
