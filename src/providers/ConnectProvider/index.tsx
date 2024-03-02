@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { VoiceBase } from "../../pages";
 import { BottomToaster } from "../../utils/toast";
+import { sendEvent } from "../../utils/gtag";
 
 type ConnectProviderProps = {
   children?: React.ReactNode;
@@ -42,6 +43,11 @@ const ConnectProvider: React.FC<ConnectProviderProps> = (props) => {
         BottomToaster?.show({
           message: "VCで再生しました。",
           intent: "success",
+        });
+        sendEvent({
+          action: "play-on-discord",
+          category: "audio",
+          label: voice.text + "@" + voice.id,
         });
       } else {
         const data = await res.json();
