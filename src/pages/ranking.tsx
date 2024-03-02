@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { VoiceInfo } from ".";
 import CommonMeta from "../components/CommonMeta";
 import Favorite from "../components/Favorite";
+import Connect from "../components/Connect";
 import OpenFavoriteButton from "../components/OpenFavoriteButton";
 import SimpleVoiceButton from "../components/SimpleVoiceButton";
 import TweetButton from "../components/TweetButton";
@@ -67,10 +68,13 @@ const Ranking: NextPage<RankingProps> = (props) => {
         </Card>
 
         <div css={styles.stickyButton}>
-          <OpenFavoriteButton
-            drawerOpened={favoriteOpen}
-            onClick={() => setFavoriteOpen(true)}
-          />
+          <div css={styles.stickyInner}>
+            <OpenFavoriteButton
+              drawerOpened={favoriteOpen}
+              onClick={() => setFavoriteOpen(true)}
+            />
+            <Connect />
+          </div>
         </div>
 
         <Drawer

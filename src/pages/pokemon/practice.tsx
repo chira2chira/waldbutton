@@ -9,6 +9,9 @@ import TweetButton from "../../components/TweetButton";
 import Container from "../../templates/Container";
 import { sendEvent } from "../../utils/gtag";
 import { loadPokemonVoice, PokemonVoice } from "../../utils/pokemon";
+import * as styles from "../../styles/Home.module";
+import Connect from "../../components/Connect";
+import OpenFavoriteButton from "../../components/OpenFavoriteButton";
 
 type PracticeProps = {
   voices: PokemonVoice[];
@@ -110,6 +113,14 @@ const Practice: NextPage<PracticeProps> = (props) => {
             ))}
           </div>
         </Card>
+
+        <div css={styles.stickyButton}>
+          <div css={styles.stickyInner}>
+            {/** 高さがないとレイアウトが崩れる */}
+            <div style={{ height: "3.5em" }} />
+            <Connect />
+          </div>
+        </div>
       </Container>
     </>
   );
