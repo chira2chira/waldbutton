@@ -58,6 +58,16 @@ export const getServerSideProps: GetServerSideProps<ConnectProps> = async (
   context
 ) => {
   const key = context.query.key;
+  const userAgent = context.req.headers["user-agent"];
+
+  if (userAgent?.includes("Discordbot")) {
+    return {
+      props: {
+        success: false,
+        message: "クローラーによるアクセスのため無視",
+      },
+    };
+  }
 
   try {
     const res = await fetch(`${process.env.BOT_ENDPOINT}/connect`, {
