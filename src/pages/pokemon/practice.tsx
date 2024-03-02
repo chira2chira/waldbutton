@@ -1,4 +1,4 @@
-import { Card, H2 } from "@blueprintjs/core";
+import { Card, H2, Icon } from "@blueprintjs/core";
 import { css } from "@emotion/react";
 import { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
@@ -94,7 +94,7 @@ const Practice: NextPage<PracticeProps> = (props) => {
                 <option value="id">ポケモン図鑑順</option>
                 <option value="name">五十音順</option>
               </select>
-              <span className="bp5-icon bp5-icon-chevron-down"></span>
+              <Icon icon="chevron-down" />
             </div>
           </div>
 
