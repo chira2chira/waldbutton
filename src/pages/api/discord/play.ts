@@ -1,5 +1,6 @@
 import { getIronSession } from "iron-session";
 import type { NextApiRequest, NextApiResponse } from "next";
+import requestIp from "request-ip";
 import { SessionData, sessionOptions } from "../../../utils/session";
 
 export default async function handler(
@@ -22,7 +23,11 @@ export default async function handler(
         "Content-Type": "application/json",
         "x-api-key": process.env.BOT_API_KEY || "",
       },
-      body: JSON.stringify({ url, channel: session.channelId }),
+      body: JSON.stringify({
+        url,
+        channel: session.channelId,
+        clientIp: requestIp.getClientIp(req),
+      }),
     });
 
     if (result.ok) {

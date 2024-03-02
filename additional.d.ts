@@ -17,3 +17,5 @@ interface Window {
   workbox: any;
 }
 declare var window: Window;
+
+declare module 'request-ip';
