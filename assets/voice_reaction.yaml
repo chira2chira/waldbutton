@@ -269,6 +269,11 @@
   kana: アハー
   id: fUzS16b7Mb0
   time: 2:15:37
+- url: /static/voice/アハッ.mp3
+  text: アハッ
+  kana: アハッ
+  id: t1segS3nyoY
+  time: 15:06
 - url: /static/voice/危ねぇだろー！.mp3
   text: 危ねぇだろー！
   kana: あぶねぇだろー！
@@ -284,6 +289,11 @@
   kana: あまえるなワル！
   id: ITXgKYRjd-g
   time: 1:01:40
+- url: /static/voice/謝れ！.mp3
+  text: 謝れ！
+  kana: あやまれ！
+  id: t1segS3nyoY
+  time: 1:58:48
 - url: /static/voice/あわやー！.mp3
   text: あわやー！
   kana: あわやー！
@@ -2005,6 +2015,11 @@
   kana: やだぁ
   id: N-Y35HXajzM
   time: 24:13
+- url: /static/voice/やだよっ.mp3
+  text: やだよっ
+  kana: やだよっ
+  id: t1segS3nyoY
+  time: 1:23:52
 - url: /static/voice/やったぁ.mp3
   text: やったぁ
   kana: やったぁ

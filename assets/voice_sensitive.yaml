@@ -33,6 +33,11 @@
   kana: ほほーん_セクシー
   id: BmuOvlKh5CA
   time: 28:00
+- url: /static/voice/いくぅ！.mp3
+  text: いくぅ！
+  kana: いくぅ！
+  id: t1segS3nyoY
+  time: 1:23:00
 - url: /static/voice/今から入れるよ.mp3
   text: 今から入れるよ
   kana: いまからいれるよ
@@ -118,11 +123,21 @@
   kana: きょこーん
   id: mH-BgdqYOSs
   time: 1:11:13
+- url: /static/voice/結構お時間経ったししゃせ・・・.mp3
+  text: 結構お時間経ったししゃせ・・・
+  kana: 結構お時間経ったししゃせい・・・
+  id: t1segS3nyoY
+  time: 1:34:35
 - url: /static/voice/心にtntn生えてりゃいいの！.mp3
   text: 心にtntn生えてりゃいいの！
   kana: こころにちんちんはえてりゃいいの！
   id: wVRu9Nj5EmU
   time: 1:50:22
+- url: /static/voice/しゃへい・・・ちゃちゃちゃうちゃう.mp3
+  text: しゃへい・・・ちゃちゃちゃうちゃう
+  kana: しゃせい・・・ちゃちゃちゃうちゃう
+  id: t1segS3nyoY
+  time: 1:33:58
 - url: /static/voice/ズブズブ.mp3
   text: ズブズブ
   kana: ズブズブ

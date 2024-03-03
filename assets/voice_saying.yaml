@@ -1017,6 +1017,11 @@
   kana: はよおわらんかなこのゲーム
   id: p_u_x1SF_gU
   time: 1:42:41
+- url: /static/voice/バリアブルローラーホイル(カミカミ).mp3
+  text: バリアブルローラーホイル(カミカミ)
+  kana: バリアブルローラーホイル(カミカミ)
+  id: t1segS3nyoY
+  time: 36:09
 - url: /static/voice/パルは友達！パルは友達！.mp3
   text: パルは友達！パルは友達！
   kana: パルはともだち！パルはともだち！
@@ -1057,6 +1062,11 @@
   kana: ふぬらー！
   id: IvChimrkepk
   time: 2:42:39
+- url: /static/voice/プラベの時間だオラァ！.mp3
+  text: プラベの時間だオラァ！
+  kana: プラベのじかんだオラァ！
+  id: t1segS3nyoY
+  time: 25:24
 - url: /static/voice/ベイビィポケモン使ってらぁｗ.mp3
   text: ベイビィポケモン使ってらぁｗ
   kana: ベイビィポケモンつかってらぁｗ
@@ -1242,6 +1252,11 @@
   kana: もふもふもふもふもふもふ
   id: s8pq8axdZHw
   time: 16:52
+- url: /static/voice/やっちゃうかー？.mp3
+  text: やっちゃうかー？
+  kana: やっちゃうかー？
+  id: t1segS3nyoY
+  time: 1:19:27
 - url: /static/voice/やっちゃったー.mp3
   text: やっちゃったー
   kana: やっちゃったー

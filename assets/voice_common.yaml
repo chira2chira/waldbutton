@@ -111,6 +111,10 @@
   text: 咳払い
   kana: せきばらい
   id: wn873wAMqdY
+- url: /static/voice/かっこわら.mp3
+  text: かっこわら
+  kana: かっこわら
+  id: t1segS3nyoY
 - url: /static/voice/はーと.mp3
   text: ❤️
   kana: はーと
