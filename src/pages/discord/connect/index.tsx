@@ -1,25 +1,48 @@
-import { GetServerSideProps, NextPage } from "next";
+import { NextPage } from "next";
 import { useRouter } from "next/router";
-import { getIronSession } from "iron-session";
+import useSwr from "swr";
 import { useContext, useEffect } from "react";
 import { ConnectContext } from "../../../providers/ConnectProvider";
-import { SessionData, sessionOptions } from "../../../utils/session";
 import CommonMeta from "../../../components/CommonMeta";
 import { css } from "@emotion/react";
+import { dotFlashing } from "./style";
 
-type ConnectProps = {
-  success: boolean;
-  message: string;
-};
+async function postConnect(key: string) {
+  try {
+    const res = await fetch("/api/discord/connect", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ key }),
+    });
+    const { success, message } = await res.json();
+    return { success: !!success, message };
+  } catch (error) {
+    return { success: false, message: "通信に失敗しました。" };
+  }
+}
 
-const Connect: NextPage<ConnectProps> = (props) => {
-  const { push, asPath } = useRouter();
+const Connect: NextPage = () => {
+  const { push, query } = useRouter();
   const { connect } = useContext(ConnectContext);
+  const { data, error } = useSwr(query.key, postConnect);
 
   useEffect(() => {
-    if (props.success) connect();
-    push(`/?connectMessage=${encodeURI(props.message)}`, "/");
-  }, [push, asPath, props, connect]);
+    if (data) {
+      if (data.success) connect();
+      push(`/?connectMessage=${encodeURI(data.message)}`, "/");
+    }
+  }, [data, push, connect]);
+
+  if (error)
+    return (
+      <div>
+        致命的なエラーが発生しました。何度も発生する場合は@chira2chiraまでご連絡ください。
+        <br />
+        {error}
+      </div>
+    );
 
   return (
     <>
@@ -47,64 +70,26 @@ const Connect: NextPage<ConnectProps> = (props) => {
             height: 100vh;
           `}
         >
+          <div
+            css={css`
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              margin-left: -35px;
+              margin-bottom: 20px;
+            `}
+          >
+            <img src="/icon-192x192.png" width={120} alt="ワルトボタン" />
+            <div style={{ width: "40px" }}>
+              <div css={dotFlashing} />
+            </div>
+            <img src="/static/svg/discord.svg" height="60" alt="Discord" />
+          </div>
           <p>接続中</p>
         </div>
       </div>
     </>
   );
-};
-
-export const getServerSideProps: GetServerSideProps<ConnectProps> = async (
-  context
-) => {
-  const key = context.query.key;
-  const userAgent = context.req.headers["user-agent"];
-
-  if (userAgent?.includes("Discordbot")) {
-    return {
-      props: {
-        success: false,
-        message: "クローラーによるアクセスのため無視",
-      },
-    };
-  }
-
-  try {
-    const res = await fetch(`${process.env.BOT_ENDPOINT}/connect`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": process.env.BOT_API_KEY || "",
-      },
-      body: JSON.stringify({ key }),
-    });
-
-    const { id, message } = await res.json();
-    if (res.ok) {
-      const session = await getIronSession<SessionData>(
-        context.req,
-        context.res,
-        sessionOptions
-      );
-      session.channelId = id;
-      await session.save();
-    }
-
-    return {
-      props: {
-        success: res.ok,
-        message,
-      },
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      props: {
-        success: false,
-        message: "Botとの通信に失敗しました。",
-      },
-    };
-  }
 };
 
 export default Connect;
