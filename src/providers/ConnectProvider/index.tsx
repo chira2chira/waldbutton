@@ -35,7 +35,6 @@ const ConnectProvider: React.FC<ConnectProviderProps> = (props) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": process.env.BOT_API_KEY || "",
         },
         body: JSON.stringify({ url: voice.url }),
       });
