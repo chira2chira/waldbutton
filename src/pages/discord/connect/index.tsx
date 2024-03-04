@@ -2,10 +2,10 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import useSwr from "swr";
 import { useContext, useEffect } from "react";
+import { css } from "@emotion/react";
 import { ConnectContext } from "../../../providers/ConnectProvider";
 import CommonMeta from "../../../components/CommonMeta";
-import { css } from "@emotion/react";
-import { dotFlashing } from "./style";
+import { dotFlashing } from "../../../styles/dot";
 
 async function postConnect(key: string) {
   try {
