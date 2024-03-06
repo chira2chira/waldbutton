@@ -60,7 +60,7 @@ SELECT
 FROM
   \`wald-analytics.analytics_285297767.events_*\`
 WHERE
-  event_name = 'play' AND (REGEXP_EXTRACT(_TABLE_SUFFIX, r'[0-9]+') BETWEEN '${startString}' AND '${endString}')
+  event_name IN ('play','play-on-discord') AND (REGEXP_EXTRACT(_TABLE_SUFFIX, r'[0-9]+') BETWEEN '${startString}' AND '${endString}')
 GROUP BY
   label
 ORDER BY
