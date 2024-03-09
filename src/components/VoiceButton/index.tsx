@@ -34,7 +34,7 @@ const VoiceButton: React.FC<VoiceButtonProps> = (props) => {
       <ButtonBase
         voice={voice}
         showVideoInfo={showVideoInfo}
-        onPlaying={handlePlaying}
+        onVoicePlaying={handlePlaying}
         onVideoInfoOpen={handleVideoInfoOpen}
       />
     </>

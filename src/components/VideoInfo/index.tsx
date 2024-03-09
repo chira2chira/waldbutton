@@ -230,7 +230,7 @@ const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
                     showVideoInfo={false}
                     hideIcon={true}
                     hideBackground={true}
-                    onPlaying={handlePlaying}
+                    onVoicePlaying={handlePlaying}
                     onVideoInfoOpen={handleDoNothing}
                   >
                     <Icon icon="volume-up" size={28} color="white" />

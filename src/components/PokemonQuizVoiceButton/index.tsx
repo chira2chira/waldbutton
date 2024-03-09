@@ -41,7 +41,7 @@ const PokemonQuizVoiceButton: React.FC<PokemonQuizButtonProps> = (props) => {
         showVideoInfo={false}
         hideIcon={true}
         preLoad={true}
-        onPlaying={handlePlaying}
+        onVoicePlaying={handlePlaying}
         onVideoInfoOpen={handleDoNothing}
       >
         <Icon icon="volume-up" size={size} />

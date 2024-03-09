@@ -28,7 +28,7 @@ const SimpleVoiceButton: React.FC<SimpleVoiceButtonProps> = (props) => {
         minimal={true}
         voice={voice}
         showVideoInfo={false}
-        onPlaying={handlePlaying}
+        onVoicePlaying={handlePlaying}
         onVideoInfoOpen={handleDoNothing}
       />
     </>

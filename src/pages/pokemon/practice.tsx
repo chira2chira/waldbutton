@@ -150,7 +150,7 @@ const NakigoeButton: React.FC<{ voice: PokemonVoice }> = (props) => {
       <ButtonBase
         voice={voice}
         showVideoInfo={false}
-        onPlaying={handlePlaying}
+        onVoicePlaying={handlePlaying}
         onVideoInfoOpen={handleDoNothing}
       />
     </div>
