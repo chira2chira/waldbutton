@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Button } from "@blueprintjs/core";
+import { Button, Icon } from "@blueprintjs/core";
 import { sendEvent } from "../../utils/gtag";
 import { VoiceInfo } from "../../pages";
 import ButtonBase from "../ButtonBase";
+import { css } from "@emotion/react";
 
 type RandomVoiceButtonProps = {
   voiceInfo: VoiceInfo[];
@@ -61,7 +62,16 @@ const RandomVoiceButton: React.FC<RandomVoiceButtonProps> = (props) => {
           onVideoInfoOpen={dummyHandler}
         />
       ) : (
-        <Button onClick={handleRandomPlay}>ランダム再生</Button>
+        <Button onClick={handleRandomPlay}>
+          <Icon
+            icon="generate"
+            intent="primary"
+            css={css`
+              margin-right: 7px;
+            `}
+          />
+          <span>ランダム再生</span>
+        </Button>
       )}
     </>
   );
