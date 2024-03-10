@@ -184,6 +184,11 @@
   kana: あーいたいいたいいたいいたい
   id: ITXgKYRjd-g
   time: 03:48
+- url: /static/voice/あーうるさいうるさいうるさいうるさい.mp3
+  text: あーうるさいうるさいうるさいうるさい
+  kana: あーうるさいうるさいうるさいうるさい
+  id: OjwKp97CyeE
+  time: 2:21:27
 - url: /static/voice/あーぇ？.mp3
   text: あーぇ？
   kana: あーぇ？
@@ -564,6 +569,11 @@
   kana: ウヒョー
   id: MtX4AKoF8BA
   time: 54:02
+- url: /static/voice/ウヒョ～！.mp3
+  text: ウヒョ～！
+  kana: ウヒョ～！
+  id: OjwKp97CyeE
+  time: 26:35
 - url: /static/voice/ウフフゥ！.mp3
   text: ウフフゥ！
   kana: ウフフゥ！
@@ -1610,6 +1620,11 @@
   kana: なんで～？
   id: 
   time: 
+- url: /static/voice/なんでいなんでい～.mp3
+  text: なんでいなんでい～
+  kana: なんでいなんでい～
+  id: OjwKp97CyeE
+  time: 26:52
 - url: /static/voice/なんでこうなっちゃったんだろう.mp3
   text: なんでこうなっちゃったんだろう
   kana: なんでこうなっちゃったんだろう
