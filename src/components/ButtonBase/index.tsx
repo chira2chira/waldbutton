@@ -84,7 +84,7 @@ const ButtonBase = forwardRef<HTMLButtonElement, VoiceButtonProps>(
       } else if (connecting) {
         setStatus("buffer");
         playDiscord(voice).then(() => {
-          setStatus("pause");
+          handleEnded();
         });
         return;
       }
