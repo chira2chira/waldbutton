@@ -39,6 +39,7 @@ import TweetButton from "../components/TweetButton";
 import Favorite from "../components/Favorite";
 import OpenFavoriteButton from "../components/OpenFavoriteButton";
 import Connect from "../components/Connect";
+import RandomVoiceButton from "../components/RandomVoiceButton";
 
 export type VoiceCategory =
   | "greetings"
@@ -356,6 +357,10 @@ const Home: NextPage<HomeProps> = (props) => {
                 onChange={updateFilter}
               ></InputGroup>
             </Label>
+
+            <div>
+              <RandomVoiceButton voiceInfo={props.voiceInfo} />
+            </div>
           </Card>
         </div>
 
