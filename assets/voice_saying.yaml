@@ -331,6 +331,11 @@
   kana: おい、おしゃぶりよういしとけよ！
   id: LR4u8AvpiY0
   time: 2:17:04
+- url: /static/voice/オイラだよオイラ.mp3
+  text: オイラだよオイラ
+  kana: オイラだよオイラ
+  id: NcijcoW4k7M
+  time: 28:18
 - url: /static/voice/おおぶぶぶぶぶ.mp3
   text: おおぶぶぶぶぶ
   kana: おおぶぶぶぶぶ
@@ -1172,6 +1177,11 @@
   kana: ほにゅうびんはいしんするしかねぇ！
   id: krIhr5CbEgg
   time: 48:43
+- url: /static/voice/ポーメポメポメポメポメ.mp3
+  text: ポーメポメポメポメポメ
+  kana: ポーメポメポメポメポメ
+  id: NcijcoW4k7M
+  time: 27:44
 - url: /static/voice/ほらこっちこい.mp3
   text: ほらこっちこい
   kana: ほらこっちこい
@@ -1297,6 +1307,11 @@
   kana: よけろババァー！
   id: 3IHgzmGeqvA
   time: 3:06:03
+- url: /static/voice/汚してやるからなお前のこと.mp3
+  text: 汚してやるからなお前のこと
+  kana: よごしてやるからなおまえのこと
+  id: NcijcoW4k7M
+  time: 12:50
 - url: /static/voice/よだれ出てきちゃう.mp3
   text: よだれ出てきちゃう
   kana: よだれでてきちゃう
