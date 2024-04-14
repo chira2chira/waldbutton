@@ -1,3 +1,8 @@
+- url: /static/voice/舌打ち.mp3
+  text: 舌打ち
+  kana: したうち
+  id: uks_XNGJT9w
+  time: 17:41
 - url: /static/voice/僕、口悪くないですよぉ？.mp3
   text: 僕、口悪くないですよぉ？
   kana: ぼく、くちわるくないですよぉ？
@@ -58,6 +63,11 @@
   kana: ガキ！
   id: p_u_x1SF_gU
   time: 1:16:13
+- url: /static/voice/カス～～.mp3
+  text: カス～～
+  kana: カス～～
+  id: uks_XNGJT9w
+  time: 17:41
 - url: /static/voice/金！女！車！.mp3
   text: 金！女！車！
   kana: かね！おんな！くるま！

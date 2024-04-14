@@ -79,6 +79,11 @@
   kana: わらい13
   id: W-IMhGDHqB0
   time: 41:29
+- url: /static/voice/笑い14.mp3
+  text: 笑い14
+  kana: わらい14
+  id: uks_XNGJT9w
+  time: 39:28
 - url: /static/voice/高笑い.mp3
   text: 高笑い
   kana: たかわらい
@@ -1225,6 +1230,11 @@
   kana: しまいにはキレるぞ！
   id: wVRu9Nj5EmU
   time: 48:18
+- url: /static/voice/シャッシャッシャッ.mp3
+  text: ｼｬｯｼｬｯｼｬｯｼｬｯｼｬｯｼｬｯ
+  kana: シャッシャッシャッ
+  id: uks_XNGJT9w
+  time: 48:47
 - url: /static/voice/邪魔だわぁ.mp3
   text: 邪魔だわぁ
   kana: じゃまだわぁ
@@ -1310,6 +1320,11 @@
   kana: だいじょぶそ？
   id: pr4_Y47DprM
   time: 2:21:41
+- url: /static/voice/だから何？.mp3
+  text: だから何？
+  kana: だからなに？
+  id: uks_XNGJT9w
+  time: 04:36
 - url: /static/voice/助けて！.mp3
   text: 助けて！
   kana: たすけて！
@@ -1355,6 +1370,11 @@
   kana: ダメでーす
   id: s8pq8axdZHw
   time: 1:23:18
+- url: /static/voice/だよね～.mp3
+  text: だよね～
+  kana: だよね～
+  id: uks_XNGJT9w
+  time: 1:44:48
 - url: /static/voice/誰～！？.mp3
   text: 誰～！？
   kana: だれ～！？
@@ -1480,6 +1500,11 @@
   kana: てまかけさせやがって(カミカミ)
   id: _G8gE_gj74s
   time: 1:29:53
+- url: /static/voice/テンション上がってきたｧｧ！.mp3
+  text: テンション上がってきたｧｧ！
+  kana: テンションあがってきたｧｧ！
+  id: uks_XNGJT9w
+  time: 55:06
 - url: /static/voice/どアホ！.mp3
   text: どアホ！
   kana: どアホ！
@@ -1635,6 +1660,11 @@
   kana: なんでなの～
   id: IrAX2p8e0Ik
   time: 48:28
+- url: /static/voice/なんでよ？.mp3
+  text: なんでよ？
+  kana: なんでよ？
+  id: uks_XNGJT9w
+  time: 10:44
 - url: /static/voice/なんなんにゃあ？.mp3
   text: なんなんにゃあ？
   kana: なんなんにゃあ？
@@ -1990,6 +2020,11 @@
   kana: もうかえるワル
   id: -WGXZfvHX3I
   time: 1:23:26
+- url: /static/voice/もうやめる！.mp3
+  text: もうやめる！
+  kana: もうやめる！
+  id: uks_XNGJT9w
+  time: 2:41:35
 - url: /static/voice/もう悪いことしませんからぁ.mp3
   text: もう悪いことしませんからぁ
   kana: もうわるいことしませんからぁ
@@ -2240,6 +2275,11 @@
   kana: わーいできたよー
   id: UA30wTziuno
   time: 1:27:49
+- url: /static/voice/ワロタ～.mp3
+  text: ワロタ～
+  kana: ワロタ～
+  id: uks_XNGJT9w
+  time: 55:03
 - url: /static/voice/ヲッハッハッ.mp3
   text: ヲッハッハッ
   kana: ヲッハッハッ
