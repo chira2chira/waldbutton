@@ -1110,6 +1110,11 @@
   kana: く～～っ
   id: DB2wi3GflZo
   time: 42:41
+- url: /static/voice/ククククｗｗ.mp3
+  text: ククククｗｗ
+  kana: ククククｗｗ
+  id: MSs0VWQR2mA
+  time: 51:17
 - url: /static/voice/草ぁ！.mp3
   text: 草ぁ！
   kana: くさぁ！
@@ -1145,6 +1150,11 @@
   kana: ケタケタケタ
   id: wn873wAMqdY
   time: 19:40
+- url: /static/voice/ケツでっか.mp3
+  text: ケツでっか
+  kana: ケツでっか
+  id: MSs0VWQR2mA
+  time: 1:03:53
 - url: /static/voice/ここすき.mp3
   text: ここすき
   kana: ここすき
@@ -1850,6 +1860,11 @@
   kana: へ～～ぁぁ！
   id: G0InB_zJGPc
   time: 48:09
+- url: /static/voice/ッヘヘヘヘ.mp3
+  text: ッヘヘヘヘ
+  kana: ッヘヘヘヘ
+  id: 4LEOnWbnVjw
+  time: 55:45
 - url: /static/voice/変なの～.mp3
   text: 変なの～
   kana: へんなの～

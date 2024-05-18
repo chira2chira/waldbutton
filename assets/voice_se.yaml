@@ -3,6 +3,11 @@
   kana: ガチはくしゅ
   id: UA30wTziuno
   time: 1:47:01
+- url: /static/voice/アイリスアウト効果音.mp3
+  text: アイリスアウト効果音
+  kana: アイリスアウトこうかおん
+  id: 4LEOnWbnVjw
+  time: 42:20
 - url: /static/voice/アオーン.mp3
   text: アオーン
   kana: アオーン
@@ -253,6 +258,11 @@
   kana: ボカァン！
   id: RJee49xGlJc
   time: 09:15
+- url: /static/voice/ミャーオ！.mp3
+  text: ミャーオ！
+  kana: ミャーオ！
+  id: MSs0VWQR2mA
+  time: 32:19
 - url: /static/voice/遊戯王SE（表示音）.mp3
   text: 遊戯王SE（表示音）
   kana: ゆうぎおうSE（ひょうじおん）
