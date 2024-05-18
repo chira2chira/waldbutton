@@ -186,6 +186,11 @@
   kana: ひとりのときがいちばんげんき！おうまがワルトです！
   id: mH-BgdqYOSs
   time: 23:05
+- url: /static/voice/三度の飯より金が好き！どうも逢魔牙ワルトで～す！.mp3
+  text: 三度の飯より金が好き！どうも逢魔牙ワルトで～す！
+  kana: さんどのめしよりかねがすき！どうもおうまがワルトで～す！
+  id: MSs0VWQR2mA
+  time: 2:08:44
 - url: /static/voice/あ、Vtuberに中身なんていないんだった.mp3
   text: あ、Vtuberに中身なんていないんだった
   kana: あ、Vtuberになかみなんていないんだった
@@ -616,11 +621,6 @@
   kana: SAMURAI
   id: Gwmq93mPIkk
   time: 2:21:29
-- url: /static/voice/三度の飯より金が好き！どうも逢魔牙ワルトで～す！.mp3
-  text: 三度の飯より金が好き！どうも逢魔牙ワルトで～す！
-  kana: さんどのめしよりかねがすき！どうもおうまがワルトで～す！
-  id: MSs0VWQR2mA
-  time: 2:08:44
 - url: /static/voice/潮を噴き出しているー！.mp3
   text: 潮を噴き出しているー！
   kana: しおをふきだしているー！
