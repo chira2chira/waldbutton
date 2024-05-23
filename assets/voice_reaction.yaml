@@ -439,6 +439,16 @@
   kana: いててててて
   id: Oi9BJhhtFRY
   time: 1:43:18
+- url: /static/voice/イテテ イテテだよぉ～.mp3
+  text: イテテ イテテだよぉ～
+  kana: イテテ イテテだよぉ～
+  id: uks_XNGJT9w
+  time: 1:02:37
+- url: /static/voice/いっぱいあるね・・・.mp3
+  text: いっぱいあるね・・・
+  kana: いっぱいあるね・・・
+  id: uks_XNGJT9w
+  time: 1:01:30
 - url: /static/voice/いっぱいきたあ.mp3
   text: いっぱいきたあ
   kana: いっぱいきたあ
@@ -939,6 +949,11 @@
   kana: ガハハっつって
   id: kuDYGk8433M
   time: 11:07
+- url: /static/voice/ガハハハ！.mp3
+  text: ガハハハ！
+  kana: ガハハハ！
+  id: uks_XNGJT9w
+  time: 1:02:51
 - url: /static/voice/かわいい～.mp3
   text: かわいい～
   kana: かわいい～
@@ -1065,6 +1080,11 @@
   kana: きもちいい～
   id: fd4yjsgfP3Q
   time: 1:26:49
+- url: /static/voice/気持ちいい↑～！.mp3
+  text: 気持ちいい↑～！
+  kana: きもちいい↑～！
+  id: uks_XNGJT9w
+  time: 1:02:53
 - url: /static/voice/気持ちいい気持ちいい.mp3
   text: 気持ちいい気持ちいい
   kana: きもちいいきもちいい
