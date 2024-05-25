@@ -23,6 +23,15 @@ const Container: React.VFC<ContainerProps> = (props) => {
               gap: 10px;
             `}
           >
+            <Link href="/game/pairs" css={styles.headerApp}>
+              <img
+                src="/static/svg/card.svg"
+                alt="くしゃみ神経衰弱"
+                width={30}
+                height={30}
+              />
+              <span>神経衰弱</span>
+            </Link>
             <Link href="/pokemon" css={styles.headerApp}>
               <img
                 src="/static/svg/pokeball.svg"
