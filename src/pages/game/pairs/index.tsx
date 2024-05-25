@@ -181,8 +181,11 @@ const Pairs: NextPage<PairsProps> = (props) => {
     } else if (gameMode === "cpu:hard") {
       // 既知のカードを選択する
       const opened = tCards.filter((x) => openCount[x.index] > 0);
+      if (opened.length > 0) {
         secondIndex = opened[Math.floor(Math.random() * opened.length)].index;
-    } else {
+      }
+    }
+    if (secondIndex < 0) {
       secondIndex = tCards[Math.floor(Math.random() * tCards.length)].index;
     }
     setSelected([firstIndex, secondIndex]);
