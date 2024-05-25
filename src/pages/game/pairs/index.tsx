@@ -1,4 +1,10 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Button, Card, H2, HTMLSelect } from "@blueprintjs/core";
 import { css, keyframes } from "@emotion/react";
 import { GetStaticProps, NextPage } from "next";
@@ -22,6 +28,7 @@ type Player = "player1" | "player2";
 type CardProps = {
   open: boolean;
   owner: "" | Player;
+  getIndex: number;
   voice: string;
 };
 
@@ -84,6 +91,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
       shuffle(choice).map((x) => ({
         open: false,
         owner: "",
+        getIndex: -1,
         voice: x,
       }))
     );
@@ -109,9 +117,6 @@ const Pairs: NextPage<PairsProps> = (props) => {
   };
 
   const flip = (index: number) => {
-    if (!playing || busy || cards[index].open || selected.includes(index))
-      return;
-
     setSelected([...selected, index]);
     setOpenCount(openCount.map((x, i) => (i === index ? x + 1 : x)));
   };
@@ -176,7 +181,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
     } else if (gameMode === "cpu:hard") {
       // 既知のカードを選択する
       const opened = tCards.filter((x) => openCount[x.index] > 0);
-      secondIndex = opened[Math.floor(Math.random() * opened.length)].index;
+        secondIndex = opened[Math.floor(Math.random() * opened.length)].index;
     } else {
       secondIndex = tCards[Math.floor(Math.random() * tCards.length)].index;
     }
@@ -205,6 +210,11 @@ const Pairs: NextPage<PairsProps> = (props) => {
             ...x,
             open: selected.includes(i) ? true : x.open,
             owner: selected.includes(i) ? turnPlayer : x.owner,
+            getIndex: selected.includes(i)
+              ? turnPlayer === "player1"
+                ? playerPoint[0] / 2
+                : playerPoint[1] / 2
+              : x.getIndex,
           }));
           setCards(newCards);
           setPopupMessage("🎉正解！🎉");
@@ -421,13 +431,16 @@ const Pairs: NextPage<PairsProps> = (props) => {
               `}
             >
               {cards.map((x, i) => (
-                <div key={i} onClick={() => flip(i)}>
-                  <SoundCard
-                    open={selected.includes(i) || x.open}
-                    owner={x.owner}
-                    voice={x.voice}
-                  />
-                </div>
+                <SoundCard
+                  key={i}
+                  disabled={busy}
+                  playing={playing}
+                  open={selected.includes(i) || x.open}
+                  owner={x.owner}
+                  getIndex={x.getIndex}
+                  voice={x.voice}
+                  onClick={() => flip(i)}
+                />
               ))}
             </div>
           </div>
@@ -439,16 +452,27 @@ const Pairs: NextPage<PairsProps> = (props) => {
   );
 };
 
-type SoundCardProps = CardProps & {};
+type SoundCardProps = CardProps & {
+  disabled: boolean;
+  playing: boolean;
+  onClick: () => void;
+};
 
 const SoundCard: React.FC<SoundCardProps> = (props) => {
   // console.log(props.voice);
   const audio = useRef<HTMLAudioElement>(null);
   const { volume } = useContext(VolumeContext);
 
-  useEffect(() => {
-    if (!props.open) return;
+  const handleClick = () => {
+    if (props.playing) {
+      if (props.disabled || props.open) return;
+      props.onClick();
+    } else {
+      play();
+    }
+  };
 
+  const play = useCallback(() => {
     const current = audio.current;
     if (!current) return;
 
@@ -462,14 +486,23 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
       current.currentTime = 0;
     }
     current.play();
-  }, [props.open, volume]);
+  }, [volume]);
+
+  useEffect(() => {
+    if (!props.open) return;
+
+    play();
+  }, [props.open, play]);
+
   return (
     <>
       <div className={props.open ? "open" : ""}>
-        <div
+        <button
           css={css`
             width: 100px;
             height: 150px;
+            border: none;
+            background: none;
             position: relative;
             cursor: pointer;
             transition-duration: 0.4s;
@@ -509,6 +542,7 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
               transform: rotateY(180deg);
             }
           `}
+          onClick={handleClick}
         >
           <img
             className="back"
@@ -530,7 +564,29 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
             src="/static/image/card_front.png"
             alt="トランプ表"
           />
-        </div>
+          {!props.playing && props.getIndex >= 0 && (
+            <div
+              css={css`
+                position: absolute;
+                bottom: 2px;
+                left: 2px;
+                transform: rotateY(180deg);
+                background: ${props.owner === "player1"
+                  ? PLAYER1_COLOR
+                  : PLAYER2_COLOR};
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 20px;
+              `}
+            >
+              {props.getIndex + 1}
+            </div>
+          )}
+        </button>
       </div>
 
       <audio ref={audio} src={props.voice} preload="auto" />
