@@ -28,7 +28,7 @@ type Player = "player1" | "player2";
 type CardProps = {
   open: boolean;
   owner: "" | Player;
-  getIndex: number;
+  gotIndex: number;
   voice: string;
 };
 
@@ -91,7 +91,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
       shuffle(choice).map((x) => ({
         open: false,
         owner: "",
-        getIndex: -1,
+        gotIndex: -1,
         voice: x,
       }))
     );
@@ -213,11 +213,11 @@ const Pairs: NextPage<PairsProps> = (props) => {
             ...x,
             open: selected.includes(i) ? true : x.open,
             owner: selected.includes(i) ? turnPlayer : x.owner,
-            getIndex: selected.includes(i)
+            gotIndex: selected.includes(i)
               ? turnPlayer === "player1"
                 ? playerPoint[0] / 2
                 : playerPoint[1] / 2
-              : x.getIndex,
+              : x.gotIndex,
           }));
           setCards(newCards);
           setPopupMessage("🎉正解！🎉");
@@ -440,7 +440,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
                   playing={playing}
                   open={selected.includes(i) || x.open}
                   owner={x.owner}
-                  getIndex={x.getIndex}
+                  gotIndex={x.gotIndex}
                   voice={x.voice}
                   onClick={() => flip(i)}
                 />
@@ -567,7 +567,7 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
             src="/static/image/card_front.png"
             alt="トランプ表"
           />
-          {!props.playing && props.getIndex >= 0 && (
+          {!props.playing && props.gotIndex >= 0 && (
             <div
               css={css`
                 position: absolute;
@@ -586,7 +586,7 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
                 line-height: 20px;
               `}
             >
-              {props.getIndex + 1}
+              {props.gotIndex + 1}
             </div>
           )}
         </button>
