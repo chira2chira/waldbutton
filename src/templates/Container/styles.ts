@@ -24,7 +24,7 @@ export const header = css`
     box-shadow: 0px 0px 3px 0px #182026;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 440px) {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -46,7 +46,7 @@ export const headerContainer = css`
 
 export const title = css`
   margin: 0;
-  font-size: 32px !important;
+  font-size: 30px !important;
   font-family: "Yusei Magic", sans-serif;
   font-weight: normal;
   color: #ffffff;
@@ -65,8 +65,11 @@ export const title = css`
   }
 
   /** 古いデバイス向け */
+  @media (max-width: 390px) {
+    font-size: 24px !important;
+  }
   @media (max-width: 375px) {
-    font-size: 28px !important;
+    font-size: 22px !important;
   }
 `;
 
@@ -81,7 +84,7 @@ export const headerApp = css`
     color: white;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 440px) {
     flex-direction: column;
     align-items: center;
     gap: 1px;
