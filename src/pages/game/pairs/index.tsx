@@ -502,8 +502,8 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
       <div className={props.open ? "open" : ""}>
         <button
           css={css`
-            width: 100px;
-            height: 150px;
+            width: 90px;
+            height: 135px;
             border: none;
             background: none;
             position: relative;
