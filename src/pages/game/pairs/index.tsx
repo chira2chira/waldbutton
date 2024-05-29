@@ -112,7 +112,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
     sendEvent({
       action: "start",
       category: "pairs",
-      label: gameMode,
+      label: `${gameMode}:${count}`,
     });
   };
 
@@ -242,19 +242,26 @@ const Pairs: NextPage<PairsProps> = (props) => {
     if (cards.length === cards.filter((x) => x.open).length) {
       if (playerPoint[0] === 0 && playerPoint[1] === 0) {
         setSystemMessage("");
-      } else if (playerPoint[0] > playerPoint[1]) {
-        setSystemMessage(`${playerName[0]}の勝利`);
-      } else if (playerPoint[0] < playerPoint[1]) {
-        setSystemMessage(`${playerName[1]}の勝利`);
       } else {
-        setSystemMessage("引き分け");
+        const DRAW = "draw";
+        const winner =
+          playerPoint[0] > playerPoint[1]
+            ? playerName[0]
+            : playerPoint[0] < playerPoint[1]
+            ? playerName[1]
+            : DRAW;
+        if (winner === DRAW) {
+          setSystemMessage("引き分け");
+        } else {
+          setSystemMessage(`${winner}の勝利`);
+        }
+        sendEvent({
+          action: "finish",
+          category: "pairs",
+          label: `${gameMode}:${count}:${winner}`,
+        });
       }
       setPlaying(false);
-      sendEvent({
-        action: "finish",
-        category: "pairs",
-        label: gameMode,
-      });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playerPoint]);
