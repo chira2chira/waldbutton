@@ -132,38 +132,20 @@ const Pairs: NextPage<PairsProps> = (props) => {
       .map((x, i) => ({ ...x, index: i }))
       .filter((x) => !x.open);
     let firstIndex = -1;
-    if (gameMode === "cpu:easy" || gameMode === "cpu:normal") {
-      const unkownCards = tCards.filter(
-        (x) => openCount[x.index] < threshold + 1
-      );
-      if (unkownCards.length > 0) {
-        // 既知のカードは開かない
-        firstIndex =
-          unkownCards[Math.floor(Math.random() * unkownCards.length)].index;
-      } else {
-        firstIndex = tCards[Math.floor(Math.random() * tCards.length)].index;
+    // 既に開示済みのペアがないか探す
+    for (let i = 0; i < tCards.length; i++) {
+      if (
+        tCards.filter(
+          (x) => x.voice === tCards[i].voice && openCount[x.index] > threshold
+        ).length === 2
+      ) {
+        firstIndex = tCards[i].index;
+        break;
       }
-    } else {
-      // 既に開示済みのペアがないか探す
-      let skip = false;
-      for (let i = 0; i < tCards.length; i++) {
-        if (
-          tCards.filter(
-            (x) => x.voice === tCards[i].voice && openCount[x.index] > threshold
-          ).length === 2
-        ) {
-          firstIndex = tCards[i].index;
-          skip = true;
-          break;
-        }
-      }
-      if (!skip) {
-        const unknowns = tCards.filter(
-          (x) => openCount[x.index] < threshold + 1
-        );
-        firstIndex =
-          unknowns[Math.floor(Math.random() * unknowns.length)].index;
-      }
+    }
+    if (firstIndex < 0) {
+      const unknowns = tCards.filter((x) => openCount[x.index] < threshold + 1);
+      firstIndex = unknowns[Math.floor(Math.random() * unknowns.length)].index;
     }
     setSelected([firstIndex]);
 
