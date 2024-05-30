@@ -35,11 +35,11 @@ type CardProps = {
 function getPlayerNames(mode: GameMode): [string, string] {
   switch (mode) {
     case "cpu:easy":
-      return ["プレイヤー", "🐣CPU🐣"];
+      return ["プレイヤー", "🐣CPU"];
     case "cpu:normal":
-      return ["プレイヤー", "🐤CPU🐤"];
+      return ["プレイヤー", "🐤CPU"];
     case "cpu:hard":
-      return ["プレイヤー", "👹CPU👹"];
+      return ["プレイヤー", "👹CPU"];
     case "offline":
       return ["プレイヤー1", "プレイヤー2"];
   }
