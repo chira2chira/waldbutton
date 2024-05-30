@@ -32,6 +32,19 @@ type CardProps = {
   voice: string;
 };
 
+function getPlayerNames(mode: GameMode): [string, string] {
+  switch (mode) {
+    case "cpu:easy":
+      return ["プレイヤー", "🐣CPU🐣"];
+    case "cpu:normal":
+      return ["プレイヤー", "🐤CPU🐤"];
+    case "cpu:hard":
+      return ["プレイヤー", "👹CPU👹"];
+    case "offline":
+      return ["プレイヤー1", "プレイヤー2"];
+  }
+}
+
 function wait(ms: number) {
   return new Promise<void>((resolve) =>
     setTimeout(() => {
@@ -59,11 +72,11 @@ const Pairs: NextPage<PairsProps> = (props) => {
   const [cards, setCards] = useState<CardProps[]>([]);
   const [selected, setSelected] = useState<number[]>([]);
   const [openCount, setOpenCount] = useState<number[]>([]);
+  const [gameMode, setGameMode] = useState<GameMode>("cpu:easy");
   const [playerPoint, setPlayerPoint] = useState([0, 0]);
-  const [playerName, setPlayerName] = useState(["プレイヤー", "CPU"]);
+  const [playerName, setPlayerName] = useState(getPlayerNames(gameMode));
   const [playing, setPlaying] = useState(false);
   const [busy, setBusy] = useState(false);
-  const [gameMode, setGameMode] = useState<GameMode>("cpu:easy");
   const [turnPlayer, setTurnPlayer] = useState<Player>("player1");
   const [systemMessage, setSystemMessage] = useState("");
   const [popupMessage, setPopupMessage] = useState("");
@@ -95,11 +108,10 @@ const Pairs: NextPage<PairsProps> = (props) => {
         voice: x,
       }))
     );
+    setPlayerName(getPlayerNames(gameMode));
     if (gameMode.startsWith("cpu")) {
-      setPlayerName(["プレイヤー", "CPU"]);
       setTurnPlayer("player1");
     } else {
-      setPlayerName(["プレイヤー1", "プレイヤー2"]);
       setTurnPlayer(
         Math.floor(Math.random() * 100) % 2 === 0 ? "player1" : "player2"
       );
