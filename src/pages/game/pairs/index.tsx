@@ -130,7 +130,6 @@ const Pairs: NextPage<PairsProps> = (props) => {
 
   const flip = (index: number) => {
     setSelected([...selected, index]);
-    setOpenCount(openCount.map((x, i) => (i === index ? x + 1 : x)));
   };
 
   const execCpuTurn = async () => {
@@ -183,11 +182,6 @@ const Pairs: NextPage<PairsProps> = (props) => {
       secondIndex = tCards[Math.floor(Math.random() * tCards.length)].index;
     }
     setSelected([firstIndex, secondIndex]);
-    setOpenCount(
-      openCount.map((x, i) =>
-        [firstIndex, secondIndex].includes(i) ? x + 1 : x
-      )
-    );
   };
 
   // ペア判定
@@ -221,6 +215,9 @@ const Pairs: NextPage<PairsProps> = (props) => {
         }
 
         setBusy(false);
+        setOpenCount(
+          openCount.map((x, i) => (selected.includes(i) ? x + 1 : x))
+        );
         setSelected([]);
 
         setTimeout(() => {
