@@ -72,6 +72,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
   const [cards, setCards] = useState<CardProps[]>([]);
   const [selected, setSelected] = useState<number[]>([]);
   const [openCount, setOpenCount] = useState<number[]>([]);
+  const [openHistory, setOpenHistory] = useState<number[]>([]);
   const [gameMode, setGameMode] = useState<GameMode>("cpu:easy");
   const [playerPoint, setPlayerPoint] = useState([0, 0]);
   const [playerName, setPlayerName] = useState(getPlayerNames(gameMode));
@@ -121,6 +122,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
     setSelected([]);
     setPlayerPoint([0, 0]);
     setOpenCount(new Array<number>(count).fill(0));
+    setOpenHistory([]);
     sendEvent({
       action: "start",
       category: "pairs",
@@ -136,6 +138,13 @@ const Pairs: NextPage<PairsProps> = (props) => {
     // 既知とする閾値
     const threshold =
       gameMode === "cpu:easy" ? 4 : gameMode === "cpu:normal" ? 2 : 0;
+    // 直前n枚まで記憶する。鬼は全部覚えているので考慮不要
+    const knownHistory = gameMode === "cpu:easy" ? 1 : 2;
+
+    const cpuOpenCount = [...openCount];
+    for (let i = 0; i < knownHistory; i++) {
+      cpuOpenCount[openHistory[openHistory.length - 1 - i]] = threshold + 1;
+    }
 
     await wait(700);
     // 1枚目
@@ -147,7 +156,8 @@ const Pairs: NextPage<PairsProps> = (props) => {
     for (let i = 0; i < tCards.length; i++) {
       if (
         tCards.filter(
-          (x) => x.voice === tCards[i].voice && openCount[x.index] > threshold
+          (x) =>
+            x.voice === tCards[i].voice && cpuOpenCount[x.index] > threshold
         ).length === 2
       ) {
         firstIndex = tCards[i].index;
@@ -155,7 +165,9 @@ const Pairs: NextPage<PairsProps> = (props) => {
       }
     }
     if (firstIndex < 0) {
-      const unknowns = tCards.filter((x) => openCount[x.index] < threshold + 1);
+      const unknowns = tCards.filter(
+        (x) => cpuOpenCount[x.index] < threshold + 1
+      );
       firstIndex = unknowns[Math.floor(Math.random() * unknowns.length)].index;
     }
     setSelected([firstIndex]);
@@ -167,13 +179,13 @@ const Pairs: NextPage<PairsProps> = (props) => {
     let secondIndex = -1;
     const knownCards = tCards.filter(
       (x) =>
-        cards[firstIndex].voice === x.voice && openCount[x.index] > threshold
+        cards[firstIndex].voice === x.voice && cpuOpenCount[x.index] > threshold
     );
     if (knownCards.length > 0) {
       secondIndex = knownCards[0].index;
     } else if (gameMode === "cpu:hard") {
       // 既知のカードを選択する
-      const opened = tCards.filter((x) => openCount[x.index] > 0);
+      const opened = tCards.filter((x) => cpuOpenCount[x.index] > 0);
       if (opened.length > 0) {
         secondIndex = opened[Math.floor(Math.random() * opened.length)].index;
       }
@@ -218,6 +230,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
         setOpenCount(
           openCount.map((x, i) => (selected.includes(i) ? x + 1 : x))
         );
+        setOpenHistory(openHistory.concat(selected));
         setSelected([]);
 
         setTimeout(() => {
