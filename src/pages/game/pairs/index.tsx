@@ -22,7 +22,12 @@ type PairsProps = {
   voices: string[];
 };
 
-type GameMode = "cpu:easy" | "cpu:normal" | "cpu:hard" | "offline";
+type GameMode =
+  | "cpu:easy"
+  | "cpu:normal"
+  | "cpu:hard"
+  | "cpu:veryhard"
+  | "offline";
 type Player = "player1" | "player2";
 
 type CardProps = {
@@ -39,9 +44,26 @@ function getPlayerNames(mode: GameMode): [string, string] {
     case "cpu:normal":
       return ["プレイヤー", "🐤CPU"];
     case "cpu:hard":
+      return ["プレイヤー", "🦍CPU"];
+    case "cpu:veryhard":
       return ["プレイヤー", "👹CPU"];
     case "offline":
       return ["プレイヤー1", "プレイヤー2"];
+  }
+}
+
+function getThreshold(mode: GameMode): number {
+  switch (mode) {
+    case "cpu:easy":
+      return 4;
+    case "cpu:normal":
+      return 2;
+    case "cpu:hard":
+      return 1;
+    case "cpu:veryhard":
+      return 0;
+    case "offline":
+      return 0;
   }
 }
 
@@ -136,10 +158,10 @@ const Pairs: NextPage<PairsProps> = (props) => {
 
   const execCpuTurn = async () => {
     // 既知とする閾値
-    const threshold =
-      gameMode === "cpu:easy" ? 4 : gameMode === "cpu:normal" ? 2 : 0;
+    const threshold = getThreshold(gameMode);
     // 直前n枚まで記憶する。鬼は全部覚えているので考慮不要
-    const knownHistory = gameMode === "cpu:easy" ? 1 : 2;
+    const knownHistory =
+      gameMode === "cpu:easy" ? 1 : gameMode === "cpu:normal" ? 2 : 4;
 
     const cpuOpenCount = [...openCount];
     for (let i = 0; i < knownHistory; i++) {
@@ -183,7 +205,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
     );
     if (knownCards.length > 0) {
       secondIndex = knownCards[0].index;
-    } else if (gameMode === "cpu:hard") {
+    } else if (gameMode === "cpu:veryhard") {
       // 既知のカードを選択する
       const opened = tCards.filter((x) => cpuOpenCount[x.index] > 0);
       if (opened.length > 0) {
@@ -327,7 +349,8 @@ const Pairs: NextPage<PairsProps> = (props) => {
               options={[
                 { value: "cpu:easy", label: "VS CPU（よわい）" },
                 { value: "cpu:normal", label: "VS CPU（ふつう）" },
-                { value: "cpu:hard", label: "VS CPU（鬼）" },
+                { value: "cpu:hard", label: "VS CPU（つよい）" },
+                { value: "cpu:veryhard", label: "VS CPU（鬼）" },
                 { value: "offline", label: "オフライン対戦" },
               ]}
               onChange={(e) => setGameMode(e.currentTarget.value as any)}
