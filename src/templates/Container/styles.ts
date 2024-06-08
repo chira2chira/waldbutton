@@ -51,7 +51,7 @@ export const title = css`
   font-weight: normal;
   color: #ffffff;
 
-  &:before {
+  /* &:before {
     content: "";
     display: inline-block;
     margin-right: 5px;
@@ -62,7 +62,7 @@ export const title = css`
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: top;
-  }
+  } */
 
   /** 古いデバイス向け */
   @media (max-width: 390px) {

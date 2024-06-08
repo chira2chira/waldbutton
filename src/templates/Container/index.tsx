@@ -3,7 +3,7 @@ import { H1 } from "@blueprintjs/core";
 import React from "react";
 import * as styles from "./styles";
 import { css } from "@emotion/react";
-import { YouTube6k } from "../../components/Svgs";
+import { YouTube7k } from "../../components/Svgs";
 
 type ContainerProps = {
   children: React.ReactNode;
@@ -15,6 +15,7 @@ const Container: React.VFC<ContainerProps> = (props) => {
       <div css={styles.header}>
         <div css={styles.headerContainer}>
           <Link href="/">
+            <YouTube7k />
             <H1 css={styles.title}>ワルトボタン</H1>
           </Link>
           <div
