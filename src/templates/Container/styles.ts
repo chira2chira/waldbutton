@@ -65,11 +65,11 @@ export const title = css`
   } */
 
   /** 古いデバイス向け */
-  @media (max-width: 390px) {
+  @media (max-width: 410px) {
     font-size: 24px !important;
   }
   @media (max-width: 375px) {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 `;
 
@@ -84,7 +84,7 @@ export const headerApp = css`
     color: white;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 610px) {
     flex-direction: column;
     align-items: center;
     gap: 1px;
