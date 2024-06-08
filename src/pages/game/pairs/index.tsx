@@ -489,6 +489,18 @@ const Pairs: NextPage<PairsProps> = (props) => {
   );
 };
 
+const cardFadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 type SoundCardProps = CardProps & {
   disabled: boolean;
   playing: boolean;
@@ -533,7 +545,12 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
 
   return (
     <>
-      <div className={props.open ? "open" : ""}>
+      <div
+        className={props.open ? "open" : ""}
+        css={css`
+          animation: ${cardFadeIn} ease 1s;
+        `}
+      >
         <button
           css={css`
             width: 90px;
@@ -541,7 +558,7 @@ const SoundCard: React.FC<SoundCardProps> = (props) => {
             border: none;
             background: none;
             position: relative;
-            cursor: pointer;
+            cursor: ${props.disabled ? "not-allowed" : "pointer"};
             transition-duration: 0.4s;
             transition-timing-function: ease-in-out;
             transform-style: preserve-3d;
