@@ -103,31 +103,43 @@ export const YouTube7k: React.FC = () => {
       css={css`
         display: flex;
         align-items: center;
-        position: relative;
       `}
     >
       <div
         css={css`
-          position: absolute;
-          top: 3px;
-          left: 3px;
-          right: 3px;
-          bottom: 3px;
-          z-index: 1;
+          display: flex;
+          position: relative;
+        `}
+      >
+        <div
+          css={css`
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            right: 3px;
+            bottom: 3px;
+            z-index: 1;
 
-          background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta)
-            0% center/200%;
-          animation: ${gaming} 2s linear infinite;
-        `}
-      />
-      <img
-        css={css`
-          z-index: 2;
-        `}
-        alt="Congrats! YouTube 7k Subscribers!"
-        src="/static/svg/youtube_7k.svg"
-        height="40"
-      />
+            background: linear-gradient(
+                to right,
+                Magenta,
+                yellow,
+                Cyan,
+                Magenta
+              )
+              0% center/200%;
+            animation: ${gaming} 2s linear infinite;
+          `}
+        />
+        <img
+          css={css`
+            z-index: 2;
+          `}
+          alt="Congrats! YouTube 7k Subscribers!"
+          src="/static/svg/youtube_7k.svg"
+          height="40"
+        />
+      </div>
     </div>
   );
 };
