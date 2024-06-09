@@ -1,5 +1,6 @@
 import React, { ErrorInfo, ReactNode } from "react";
 import { logger } from "../../utils/logger";
+import { Card } from "@blueprintjs/core";
 
 interface Props {
   children?: ReactNode;
@@ -28,7 +29,7 @@ class ErrorBoundary extends React.Component<Props, State> {
     if (this.state.hasError) {
       // You can render any custom fallback UI
       return (
-        <>
+        <Card>
           <h2>Oops, there is an error!</h2>
           <button
             type="button"
@@ -36,7 +37,7 @@ class ErrorBoundary extends React.Component<Props, State> {
           >
             Try again?
           </button>
-        </>
+        </Card>
       );
     }
 
