@@ -49,7 +49,7 @@ const Connect: React.FC = (props) => {
               height="28"
               alt="Discordアイコン"
             />
-            Botとの接続を切る
+            <span>Botとの接続を切る</span>
           </button>
         </div>
       )}

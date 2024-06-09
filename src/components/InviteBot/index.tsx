@@ -35,7 +35,7 @@ const InviteBot: React.VFC = () => {
         onClick={handleOpenLink}
       >
         <img src="/static/svg/discord.svg" height="17" alt="Discordアイコン" />
-        Discord bot
+        <span>Discord bot</span>
       </a>
 
       <Dialog isOpen={modalOpen} onClose={handleClose} title="ワルトボタンbot">
@@ -72,10 +72,10 @@ const InviteBot: React.VFC = () => {
             </a>
           </div>
           <p className="bp5-running-text">
-            <code>/search キーワード</code>{" "}
-            をチャットするとボタンを検索することができます。
+            <code>/search キーワード</code>
+            <span> をチャットするとボタンを検索することができます。</span>
             <br />
-            検索結果からボタンを選択するとボイスチャンネルから音声が流れます（ボイスチャンネルに参加している状態で選択しないと流れません）
+            <span>検索結果からボタンを選択するとボイスチャンネルから音声が流れます（ボイスチャンネルに参加している状態で選択しないと流れません）</span>
           </p>
           <img
             style={{ width: "80%", margin: "0 auto 10px", display: "block" }}
@@ -84,8 +84,8 @@ const InviteBot: React.VFC = () => {
             loading="lazy"
           />
           <p className="bp5-running-text">
-            <code>/connect</code>{" "}
-            をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。
+            <code>/connect</code>
+            <span> をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。</span>
           </p>
           <img
             style={{ width: "80%", margin: "0 auto 5px", display: "block" }}

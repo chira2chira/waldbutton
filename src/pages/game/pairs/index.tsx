@@ -414,7 +414,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
               >
                 {playerName[0]}
                 <br />
-                {playerPoint[0]}ポイント
+                <span>{playerPoint[0]}ポイント</span>
               </div>
               <div
                 css={css`
@@ -439,8 +439,8 @@ const Pairs: NextPage<PairsProps> = (props) => {
                       `}
                     >
                       {turnPlayer === "player1" ? playerName[0] : playerName[1]}
-                    </span>{" "}
-                    のターン
+                    </span>
+                    <span> のターン</span>
                   </>
                 ) : (
                   systemMessage
@@ -455,7 +455,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
               >
                 {playerName[1]}
                 <br />
-                {playerPoint[1]}ポイント
+                <span>{playerPoint[1]}ポイント</span>
               </div>
             </div>
 

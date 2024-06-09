@@ -38,7 +38,9 @@ const Connect: NextPage = () => {
   if (error)
     return (
       <div>
-        致命的なエラーが発生しました。何度も発生する場合は@chira2chiraまでご連絡ください。
+        <span>
+          致命的なエラーが発生しました。何度も発生する場合は@chira2chiraまでご連絡ください。
+        </span>
         <br />
         {error}
       </div>

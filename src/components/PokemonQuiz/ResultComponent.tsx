@@ -42,7 +42,7 @@ const ResultComponent: React.FC<ResultProps> = (props) => {
           font-size: 120%;
         `}
       >
-        {quiz.length}問中
+        <span>{quiz.length}問中</span>
         <span
           css={css`
             margin-left: 5px;
@@ -77,7 +77,7 @@ const ResultComponent: React.FC<ResultProps> = (props) => {
           width={16}
           height={16}
         />
-        結果をシェア
+        <span>結果をシェア</span>
       </a>
 
       {quiz.map((x, i) => {

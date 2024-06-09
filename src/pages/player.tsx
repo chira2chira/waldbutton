@@ -173,7 +173,7 @@ const Ranking: NextPage<PlayerProps> = (props) => {
                     color: #5c7080;
                   `}
                 >
-                  ワルトボタンを開く
+                  <span>ワルトボタンを開く</span>
                   <Icon icon="share" />
                 </a>
               </div>

@@ -93,7 +93,7 @@ const Pokemon: NextPage = (props) => {
           </div>
 
           <p>
-            問題の生成アルゴリズムは
+            <span>問題の生成アルゴリズムは</span>
             <a
               href="https://www.pokemon.jp/special/nakigoe151/"
               target="_blank"
@@ -101,7 +101,7 @@ const Pokemon: NextPage = (props) => {
             >
               めざせ！なきごえマスター！なきごえ151
             </a>
-            を参考にしています。
+            <span>を参考にしています。</span>
           </p>
         </Card>
       </Container>

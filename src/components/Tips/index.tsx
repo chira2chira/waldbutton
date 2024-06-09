@@ -49,7 +49,9 @@ const Tips: React.VFC = () => {
               title="iPhone/iPad"
               panel={
                 <p>
-                  Safariから共有ボタンをタップし、「ホーム画面に追加」をタップします。
+                  <span>
+                    Safariから共有ボタンをタップし、「ホーム画面に追加」をタップします。
+                  </span>
                   <img
                     style={{ width: "100%", marginTop: "10px" }}
                     src="/static/image/pwa-ios.png"
@@ -64,7 +66,9 @@ const Tips: React.VFC = () => {
               title="Android"
               panel={
                 <p>
-                  Chromeから2回以上訪問すると画面下部に案内が出るのでタップします。
+                  <span>
+                    Chromeから2回以上訪問すると画面下部に案内が出るのでタップします。
+                  </span>
                   <img
                     style={{ width: "100%", marginTop: "10px" }}
                     src="/static/image/pwa-android.png"

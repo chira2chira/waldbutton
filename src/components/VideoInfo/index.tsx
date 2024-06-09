@@ -167,7 +167,7 @@ const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
                 )}
               </div>
             </div>
-            動画情報が見つかりませんでした
+            <span>動画情報が見つかりませんでした</span>
           </div>
         ) : (
           <>

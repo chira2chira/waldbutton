@@ -318,7 +318,7 @@ const Home: NextPage<HomeProps> = (props) => {
               <H5>これは何？</H5>
               <p>ワﾞルﾞー！</p>
               <p>
-                情報提供は
+                <span>情報提供は</span>
                 <a
                   href="https://forms.gle/mujoNpAqbsEjc67M9"
                   target="_blank"
@@ -326,7 +326,7 @@ const Home: NextPage<HomeProps> = (props) => {
                 >
                   こちらのフォーム
                 </a>
-                にて随時受け付けてます。
+                <span>にて随時受け付けてます。</span>
               </p>
             </div>
           </Card>
@@ -340,12 +340,12 @@ const Home: NextPage<HomeProps> = (props) => {
             `}
           >
             <Label>
-              音量
+              <span>音量</span>
               <VolumeControl />
             </Label>
 
             <Label>
-              検索
+              <span>検索</span>
               <InputGroup
                 inputRef={filterRef}
                 leftIcon="filter"
