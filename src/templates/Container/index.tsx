@@ -59,7 +59,7 @@ const Container: React.VFC<ContainerProps> = (props) => {
 
       <footer css={styles.footer}>
         <div>
-          作った人：
+          <span>作った人：</span>
           <a
             href="https://twitter.com/chira2chira"
             target="_blank"
