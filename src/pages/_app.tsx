@@ -10,6 +10,7 @@ import timezone from "dayjs/plugin/timezone";
 import VolumeProvider from "../providers/VolumeProvider";
 import FavoriteProvider from "../providers/FavoriteProvider";
 import ConnectProvider from "../providers/ConnectProvider";
+import ErrorBoundary from "../components/ErrorBoundary";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import usePageView from "../hooks/usePageView";
 import useDarkMode from "../hooks/useDarkMode";
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useDarkMode();
 
   return (
-    <>
+    <ErrorBoundary>
       <script
         // レンダリング前にダークモード用のクラスをセットする
         dangerouslySetInnerHTML={{
@@ -47,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </ConnectProvider>
         </FavoriteProvider>
       </VolumeProvider>
-    </>
+    </ErrorBoundary>
   );
 }
 export default MyApp;

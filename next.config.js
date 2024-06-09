@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const { withLogtail } = require("@logtail/next");
 const runtimeCaching = require("next-pwa/cache");
 const withPWA = require("next-pwa")({
   dest: "public",
@@ -16,4 +17,4 @@ const config = {
   reactStrictMode: false,
 };
 
-module.exports = withPWA(config);
+module.exports = withPWA(withLogtail(config));
