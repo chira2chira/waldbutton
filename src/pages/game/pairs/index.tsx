@@ -670,7 +670,7 @@ const PopupMessage: React.FC<{ message: string }> = (props) => {
     >
       <div
         css={css`
-          padding: 15px 0;
+          padding: 8px 0;
           color: #ffffff;
           text-align: center;
           font-size: 140%;
