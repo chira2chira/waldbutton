@@ -129,6 +129,16 @@
   kana: ひめい8
   id: a64S1_s423A
   time: 1:06:40
+- url: /static/voice/悲鳴9.mp3
+  text: 悲鳴9
+  kana: ひめい9
+  id: rKC239Yevjs
+  time: 20:32
+- url: /static/voice/悲鳴10.mp3
+  text: 悲鳴10
+  kana: ひめい10
+  id: rKC239Yevjs
+  time: 46:40
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -484,6 +494,11 @@
   kana: いやいやいやいや
   id: Q42HqROlXGQ
   time: 1:00:05
+- url: /static/voice/嫌だ！嫌だ！いやぁー！！.mp3
+  text: 嫌だ！嫌だ！いやﾞぁﾞー！！
+  kana: 嫌だ！嫌だ！いやぁー！！
+  id: rKC239Yevjs
+  time: 36:09
 - url: /static/voice/いやらしいな.mp3
   text: いやらしいな
   kana: いやらしいな
@@ -2110,6 +2125,11 @@
   kana: やだぁ
   id: N-Y35HXajzM
   time: 24:13
+- url: /static/voice/やだよぉ！.mp3
+  text: やだよぉ！
+  kana: やだよぉ！
+  id: rKC239Yevjs
+  time: 23:30
 - url: /static/voice/やだよっ.mp3
   text: やだよっ
   kana: やだよっ
