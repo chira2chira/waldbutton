@@ -139,6 +139,11 @@
   kana: ひめい10
   id: rKC239Yevjs
   time: 46:40
+- url: /static/voice/悲鳴11.mp3
+  text: 悲鳴11
+  kana: ひめい11
+  id: YyBeBDRCiTs
+  time: 24:17
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -449,6 +454,11 @@
   kana: いたいっち！
   id: _G8gE_gj74s
   time: 52:49
+- url: /static/voice/いつまでもこっち見てんじゃねぇぞこらぁ！.mp3
+  text: いつまでもこっち見てんじゃねぇぞこらぁ！
+  kana: いつまでもこっちみてんじゃねぇぞこらぁ！
+  id: YyBeBDRCiTs
+  time: 30:05
 - url: /static/voice/いててててて.mp3
   text: いててててて
   kana: いててててて
@@ -784,6 +794,11 @@
   kana: おいおいおい(なき)
   id: 1HTlYnHUGo8
   time: 1:13:21
+- url: /static/voice/おいしーい？.mp3
+  text: おいしーい？
+  kana: おいしーい？
+  id: YyBeBDRCiTs
+  time: 1:43:37
 - url: /static/voice/おいちー.mp3
   text: おいちー
   kana: おいちー
@@ -1180,6 +1195,11 @@
   kana: ぐちゃぐちゃになっちゃったぁ
   id: _sWHX47i6bE
   time: 18:53
+- url: /static/voice/暗すぎィ！！.mp3
+  text: 暗すぎィ！！
+  kana: くらすぎィ！！
+  id: YyBeBDRCiTs
+  time: 16:36
 - url: /static/voice/汚らわしい！.mp3
   text: 汚らわしい！
   kana: けがらわしい！
@@ -1285,6 +1305,11 @@
   kana: シャッシャッシャッ
   id: uks_XNGJT9w
   time: 48:47
+- url: /static/voice/しゃぶってる！.mp3
+  text: しゃぶってる！
+  kana: しゃぶってる！
+  id: YyBeBDRCiTs
+  time: 1:43:29
 - url: /static/voice/邪魔だわぁ.mp3
   text: 邪魔だわぁ
   kana: じゃまだわぁ
@@ -1405,6 +1430,11 @@
   kana: たてつくなー！
   id: 9Ks2OwNJL4c
   time: 1:30:00
+- url: /static/voice/ﾀﾞｯﾊﾞｯﾌﾞﾁﾁ.mp3
+  text: ﾀﾞｯﾊﾞｯﾌﾞﾁﾁ
+  kana: ﾀﾞｯﾊﾞｯﾌﾞﾁﾁ
+  id: YyBeBDRCiTs
+  time: 1:04:00
 - url: /static/voice/たまらんなぁおい.mp3
   text: たまらんなぁおい
   kana: たまらんなぁおい
@@ -1895,6 +1925,11 @@
   kana: ふかい of ふかい！
   id: PQHTxqoOZyc
   time: 34:23
+- url: /static/voice/深っかぁ.mp3
+  text: 深っかぁ❤️
+  kana: ふっかぁ
+  id: YyBeBDRCiTs
+  time: 08:05
 - url: /static/voice/フラグじゃないです！.mp3
   text: フラグじゃないです！
   kana: フラグじゃないです！
@@ -2170,6 +2205,11 @@
   kana: やばい！
   id: MtX4AKoF8BA
   time: 21:54
+- url: /static/voice/やばくない！？.mp3
+  text: やばくない！？
+  kana: やばくない！？
+  id: YyBeBDRCiTs
+  time: 13:55
 - url: /static/voice/やべー.mp3
   text: やべー
   kana: やべー

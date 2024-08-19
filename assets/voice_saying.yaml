@@ -696,6 +696,11 @@
   kana: スキスキダイスキ～
   id: MSs0VWQR2mA
   time: 06:23
+- url: /static/voice/好きだよ？見た目は.mp3
+  text: 好きだよ？見た目は
+  kana: すきだよ？みためは
+  id: YyBeBDRCiTs
+  time: 1:29:32
 - url: /static/voice/好きになっちゃった.mp3
   text: 好きになっちゃった
   kana: すきになっちゃった
@@ -821,6 +826,11 @@
   kana: チャンネルとうろくよろしくおねがいします(イケボ)
   id: XCmPFCm3mPU
   time: 1:37:58
+- url: /static/voice/チョイチョイー.mp3
+  text: チョイチョイー
+  kana: チョイチョイー
+  id: YyBeBDRCiTs
+  time: 15:36
 - url: /static/voice/ちょっとアレじゃないですか？.mp3
   text: ちょっとアレじゃないですか？
   kana: ちょっとアレじゃないですか？
@@ -1267,6 +1277,11 @@
   kana: もうかえろかえろサムいわ
   id: mH-BgdqYOSs
   time: 1:03:35
+- url: /static/voice/もう二度と来ねぇよカス！.mp3
+  text: もう二度と来ねぇよカス！
+  kana: もうにどとこねぇよカス！
+  id: YyBeBDRCiTs
+  time: 2:29:36
 - url: /static/voice/もう眠くなっちゃってんだ.mp3
   text: もう眠くなっちゃってんだ
   kana: もうねむくなっちゃってんだ

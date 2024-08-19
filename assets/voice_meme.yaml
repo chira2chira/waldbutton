@@ -18,6 +18,11 @@
   kana: いぎたいっ！
   id: NcijcoW4k7M
   time: 1:15:09
+- url: /static/voice/逝ってよし！.mp3
+  text: 逝ってよし！
+  kana: いってよし！
+  id: YyBeBDRCiTs
+  time: 24:11
 - url: /static/voice/インディグネイション詠唱.mp3
   text: インディグネイション詠唱
   kana: インディグネイションえいしょう
@@ -588,3 +593,8 @@
   kana: まじんブウのモノマネ
   id: Do1RPJRtINA
   time: 2:58:43
+- url: /static/voice/蛇語.mp3
+  text: 蛇語
+  kana: へびご
+  id: YyBeBDRCiTs
+  time: 41:16
