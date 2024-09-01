@@ -180,6 +180,20 @@ const Ranking: NextPage<PlayerProps> = (props) => {
             </>
           )}
         </div>
+
+        <div
+          css={css`
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 50vh;
+            width: 60vw;
+            background-image: url("/static/svg/button.svg");
+            background-repeat: no-repeat;
+            background-position: right 15px bottom;
+            opacity: 0.2;
+          `}
+        />
       </div>
     </>
   );
