@@ -694,6 +694,11 @@
   kana: っエィ～～
   id: 2p-eh3pmXEE
   time: 21:04
+- url: /static/voice/エェ！？.mp3
+  text: エﾞェ！？
+  kana: エェ！？
+  id: rYlwp_IO3qw
+  time: 3:03:27
 - url: /static/voice/ええっ！？.mp3
   text: ええっ！？
   kana: ええっ！？
@@ -1085,6 +1090,11 @@
   kana: かんべんしてくれぇ！
   id: cOV3J8-iTVk
   time: 1:04:07
+- url: /static/voice/キタキタキタキター！.mp3
+  text: キタキタキタキター！
+  kana: キタキタキタキター！
+  id: rYlwp_IO3qw
+  time: 40:22
 - url: /static/voice/汚いです！.mp3
   text: 汚いです！
   kana: きたないです！
@@ -2150,6 +2160,11 @@
   kana: や～～
   id: UA30wTziuno
   time: 1:04:56
+- url: /static/voice/やぁだ～.mp3
+  text: やぁだ～
+  kana: やぁだ～
+  id: rYlwp_IO3qw
+  time: 1:19:15
 - url: /static/voice/やーい.mp3
   text: やーい
   kana: やーい
