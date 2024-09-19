@@ -10,10 +10,6 @@ export const stickyButton = css`
   pointer-events: none;
   z-index: 1;
 
-  & > * {
-    pointer-events: auto;
-  }
-
   @media (min-width: 64em) {
     margin-right: -50px;
   }
@@ -23,6 +19,10 @@ export const stickyInner = css`
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+
+  & > * {
+    pointer-events: auto;
+  }
 `;
 
 export const stickyAprilFoolButton = css`
