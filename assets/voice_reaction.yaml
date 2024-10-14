@@ -164,6 +164,11 @@
   kana: むせる
   id: Qn0qFeMp_Ck
   time: 1:09:43
+- url: /static/voice/あ！.mp3
+  text: あﾞ！
+  kana: あ！
+  id: 7JijIu7amiA
+  time: 3:03:47
 - url: /static/voice/ああ！2.mp3
   text: ああ！
   kana: ああ！2
@@ -229,6 +234,11 @@
   kana: あ～こわい～ん
   id: IvChimrkepk
   time: 2:39:42
+- url: /static/voice/あーしょうもねえ！！.mp3
+  text: あﾞーしょうもねえ！！
+  kana: あーしょうもねえ！！
+  id: 7JijIu7amiA
+  time: 2:43:09
 - url: /static/voice/あーん.mp3
   text: あーん
   kana: あーん
@@ -1100,6 +1110,11 @@
   kana: きたないです！
   id: rEQQnRyQECk
   time: 54:54
+- url: /static/voice/きついて.mp3
+  text: きついて
+  kana: きついて
+  id: 7JijIu7amiA
+  time: 2:43:30
 - url: /static/voice/きったねぇなー.mp3
   text: きったねぇなー
   kana: きったねぇなー
@@ -1250,6 +1265,11 @@
   kana: ごめんなすって！
   id: EhL46VS7XDA
   time: 1:32:26
+- url: /static/voice/これｒｒｒｒ.mp3
+  text: これｒｒｒｒ
+  kana: これｒｒｒｒ
+  id: 7JijIu7amiA
+  time: 09:57
 - url: /static/voice/これだけぇ？.mp3
   text: これだけぇ？
   kana: これだけぇ？
@@ -1280,6 +1300,11 @@
   kana: こわれちゃう！
   id: 1HTlYnHUGo8
   time: 1:14:17
+- url: /static/voice/壊れちゃうワルゥ.mp3
+  text: 壊れちゃうワルゥ
+  kana: こわれちゃうワルゥ
+  id: 7JijIu7amiA
+  time: 2:47:05
 - url: /static/voice/ざまあみなさい.mp3
   text: ざまあみなさい
   kana: ざまあみなさい
@@ -2020,6 +2045,11 @@
   kana: まかセロリー
   id: _sWHX47i6bE
   time: 3:08:45
+- url: /static/voice/まじぃ？.mp3
+  text: まじぃ？
+  kana: まじぃ？
+  id: 7JijIu7amiA
+  time: 19:21
 - url: /static/voice/まじでごめん.mp3
   text: まじでごめん
   kana: まじでごめん
