@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta name="theme-color" content="#182026" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
