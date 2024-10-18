@@ -35,7 +35,6 @@ const Ranking: NextPage<RankingProps> = (props) => {
       <CommonMeta
         title="ランキング - ワルトボタン"
         cardType="summary_large_image"
-        useTwitterWidget={true}
       />
 
       <Container>

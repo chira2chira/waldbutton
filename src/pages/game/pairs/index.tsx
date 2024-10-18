@@ -315,7 +315,6 @@ const Pairs: NextPage<PairsProps> = (props) => {
       <CommonMeta
         title="くしゃみ神経衰弱 - ワルトボタン"
         cardType="summary_large_image"
-        useTwitterWidget={true}
       />
 
       <Container>

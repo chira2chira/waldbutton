@@ -32,7 +32,6 @@ const Pokemon: NextPage = (props) => {
       <CommonMeta
         title="なきごえクイズ - ワルトボタン"
         cardType="summary_large_image"
-        useTwitterWidget={true}
       />
 
       <Container>

@@ -232,11 +232,7 @@ const Home: NextPage<HomeProps> = (props) => {
 
   return (
     <>
-      <CommonMeta
-        title="ワルトボタン"
-        cardType="summary_large_image"
-        useTwitterWidget={true}
-      />
+      <CommonMeta title="ワルトボタン" cardType="summary_large_image" />
 
       <Container>
         <div

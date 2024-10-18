@@ -23,7 +23,6 @@ const Beginner: NextPage<BeginnerProps> = (props) => {
       <CommonMeta
         title="なきごえクイズ【初級】 - ワルトボタン"
         cardType="summary_large_image"
-        useTwitterWidget={true}
       />
 
       <Container>

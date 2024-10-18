@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useEffect } from "react";
+import React from "react";
 import { isProd } from "../../utils/env";
 
 type CommonMetaProps = {
@@ -7,7 +7,6 @@ type CommonMetaProps = {
   description?: string;
   cardType: "summary" | "summary_large_image" | "player";
   playerUrl?: string;
-  useTwitterWidget?: boolean;
 };
 
 function getCardImage(type: CommonMetaProps["cardType"]) {
@@ -21,21 +20,6 @@ function getCardImage(type: CommonMetaProps["cardType"]) {
 }
 
 const CommonMeta: React.VFC<CommonMetaProps> = (props) => {
-  useEffect(() => {
-    let elm: HTMLScriptElement;
-
-    if (props.useTwitterWidget) {
-      elm = document.createElement("script");
-      elm.setAttribute("src", "https://platform.twitter.com/widgets.js");
-      elm.setAttribute("async", "true");
-      document.head.appendChild(elm);
-    }
-
-    return () => {
-      if (elm) document.head.removeChild(elm);
-    };
-  }, [props.useTwitterWidget]);
-
   return (
     <>
       <Head>

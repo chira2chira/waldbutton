@@ -40,7 +40,6 @@ const Practice: NextPage<PracticeProps> = (props) => {
       <CommonMeta
         title="なきごえクイズ予習 - ワルトボタン"
         cardType="summary_large_image"
-        useTwitterWidget={true}
       />
 
       <Container>
