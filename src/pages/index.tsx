@@ -69,6 +69,7 @@ export type YouTubeInfo = {
   title: string;
   date: string;
   thumbnailUrl: string;
+  duration: string;
 };
 
 type DisplayMode = "category" | "video";
@@ -142,7 +143,8 @@ const Home: NextPage<HomeProps> = (props) => {
       const title = yt?.title || "";
       const date = yt?.date || "";
       const thumbnailUrl = yt?.thumbnailUrl || "";
-      return { id, title, date, thumbnailUrl };
+      const duration = yt?.duration || "";
+      return { id, title, date, thumbnailUrl, duration };
     },
     [props.youtubeInfo]
   );

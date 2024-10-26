@@ -17,6 +17,7 @@ const switchBox = css`
   position: absolute;
   top: 12px;
   right: 20px;
+  z-index: 1;
 
   @media (max-width: 420px) {
     top: 0;
@@ -34,16 +35,20 @@ const switchBox = css`
 const cardContainer = css`
   margin-top: 18px;
   display: flex;
+  align-items: flex-start;
   gap: 10px;
 
   @media (max-width: 420px) {
     margin-top: 0;
+    align-items: stretch;
     flex-direction: column;
     gap: 2px;
   }
 `;
 
 const thumbBox = css`
+  position: relative;
+
   @media (max-width: 420px) {
     margin: -20px -20px 10px -20px;
   }
@@ -57,6 +62,16 @@ const thumbImage = css`
     height: 100%;
     border-radius: 3px 3px 0 0;
   }
+`;
+
+const thumbDuration = css`
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
 `;
 
 const VideoCard: React.VFC<VideoCardProps> = (props) => {
@@ -94,6 +109,7 @@ const VideoCard: React.VFC<VideoCardProps> = (props) => {
                 height={180}
                 alt={props.youtubeInfo.title}
               />
+              <span css={thumbDuration}>{props.youtubeInfo.duration}</span>
             </a>
           </LazyLoad>
         </div>
