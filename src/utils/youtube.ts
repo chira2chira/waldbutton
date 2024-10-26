@@ -64,10 +64,14 @@ function convertDuration(duration: string | undefined | null) {
     }
   });
   if (
-    (over1Hour && result.length !== 3) ||
-    (!over1Hour && result.length !== 2)
+    (over1Hour && result.length === 2) ||
+    (!over1Hour && result.length === 1)
   ) {
     // S が 0
+    result.push("00");
+  } else if (over1Hour && result.length === 1) {
+    // M と S が 0
+    result.push("00");
     result.push("00");
   }
   return result.join(":");
