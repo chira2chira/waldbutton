@@ -57,7 +57,7 @@ const ResultComponent: React.FC<ResultProps> = (props) => {
 
       <a
         css={shareButton}
-        href={`https://twitter.com/share?url=${encodeURIComponent(
+        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
           "https://waldbutton.vercel.app/pokemon"
         )}&text=${encodeURIComponent(
           "ワルトなきごえクイズ【" +
