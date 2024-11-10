@@ -144,6 +144,11 @@
   kana: ひめい11
   id: YyBeBDRCiTs
   time: 24:17
+- url: /static/voice/悲鳴12.mp3
+  text: 悲鳴12
+  kana: ひめい12
+  id: VMw6sVG-If4
+  time: 2:06:29
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -1705,6 +1710,11 @@
   kana: な、なにぃー！
   id: lRfWYnOfLnA
   time: 36:23
+- url: /static/voice/なに～これぇ.mp3
+  text: なに～これぇ
+  kana: なに～これぇ
+  id: VMw6sVG-If4
+  time: 1:43:33
 - url: /static/voice/なにそれ？！.mp3
   text: なにそれ？！
   kana: なにそれ？！
