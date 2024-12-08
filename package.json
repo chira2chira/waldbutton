@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config sitemap.config.js",
+    "analyze": "set ANALYZE=true&&yarn build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,6 +33,7 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.0.4",
     "@sayari/eslint-plugin": "^0.0.1-rc.4",
     "@types/js-yaml": "^4.0.3",
     "@types/lodash.throttle": "^4.1.7",

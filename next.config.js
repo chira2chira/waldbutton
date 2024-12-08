@@ -17,4 +17,8 @@ const config = {
   reactStrictMode: false,
 };
 
-module.exports = withPWA(withLogtail(config));
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer(withPWA(withLogtail(config)));
