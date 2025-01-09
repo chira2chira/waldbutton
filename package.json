@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.8.0",
     "@google-cloud/bigquery": "^5.10.0",
     "@logtail/next": "^0.1.5",
+    "@next/third-parties": "^15.1.4",
     "dayjs": "^1.10.7",
     "googleapis": "^91.0.0",
     "iron-session": "^8.0.1",

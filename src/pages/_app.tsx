@@ -4,7 +4,6 @@ import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { FocusStyleManager } from "@blueprintjs/core";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
@@ -14,7 +13,6 @@ import FavoriteProvider from "../providers/FavoriteProvider";
 import ConnectProvider from "../providers/ConnectProvider";
 import ErrorBoundary from "../components/ErrorBoundary";
 import GoogleAnalytics from "../components/GoogleAnalytics";
-import usePageView from "../hooks/usePageView";
 import useDarkMode from "../hooks/useDarkMode";
 
 FocusStyleManager.onlyShowFocusOnTabs();
@@ -23,8 +21,6 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const { asPath } = useRouter();
-  usePageView(asPath);
   useDarkMode();
 
   return (
