@@ -1,27 +1,28 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ParsedUrlQuery } from "node:querystring";
 import CommonMeta from "../../components/CommonMeta";
 import { loadAllVoice } from "../../utils/yamlUtil";
 
-const Voice: NextPage = (props) => {
+const Voice: NextPage = () => {
+  const [pushed, setPushed] = useState(false);
   const { query, push, asPath } = useRouter();
-  const [pushed, setPushed] = React.useState(false);
+  const encodedVoice = encodeURIComponent((query.voice || "").toString());
 
   useEffect(() => {
     if (pushed) return;
 
-    push(`/?voice=${encodeURI((query.voice || "").toString())}&id=${query.id}`);
+    push(`/?voice=${encodedVoice}&id=${query.id}`);
     setPushed(true);
-  }, [query.id, query.voice, push, asPath, pushed]);
+  }, [query.id, encodedVoice, push, asPath, pushed]);
 
   return (
     <>
       <CommonMeta
         title={`${query.voice} - ワルトボタン`}
         cardType="player"
-        playerUrl={`https://waldbutton.vercel.app/player?voice=${query.voice}&id=${query.id}`}
+        playerUrl={`https://waldbutton.vercel.app/player?voice=${encodedVoice}&id=${query.id}`}
       />
     </>
   );
