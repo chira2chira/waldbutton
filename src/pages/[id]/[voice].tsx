@@ -13,7 +13,13 @@ const Voice: NextPage = (props) => {
     if (pushed) return;
 
     push(
-      `/?voice=${encodeURI((query.voice || "").toString())}&id=${query.id}`,
+      {
+        pathname: "/",
+        query: {
+          voice: query.voice,
+          id: query.id,
+        },
+      },
       asPath
     );
     setPushed(true);
