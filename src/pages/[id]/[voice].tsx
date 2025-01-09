@@ -1,19 +1,23 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ParsedUrlQuery } from "node:querystring";
 import CommonMeta from "../../components/CommonMeta";
 import { loadAllVoice } from "../../utils/yamlUtil";
 
 const Voice: NextPage = (props) => {
   const { query, push, asPath } = useRouter();
+  const [pushed, setPushed] = useState(false);
 
   useEffect(() => {
+    if (pushed) return;
+
     push(
       `/?voice=${encodeURI((query.voice || "").toString())}&id=${query.id}`,
       asPath
     );
-  }, [query.id, query.voice, push, asPath]);
+    setPushed(true);
+  }, [query.id, query.voice, push, asPath, pushed]);
 
   return (
     <>
