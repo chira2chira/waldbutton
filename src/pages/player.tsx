@@ -183,6 +183,7 @@ const Ranking: NextPage<PlayerProps> = (props) => {
 
         <div
           css={css`
+            pointer-events: none;
             position: absolute;
             right: 0;
             bottom: 0;
