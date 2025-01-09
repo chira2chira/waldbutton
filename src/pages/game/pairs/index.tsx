@@ -350,7 +350,7 @@ const Pairs: NextPage<PairsProps> = (props) => {
                 { value: "cpu:normal", label: "VS CPU（ふつう）" },
                 { value: "cpu:hard", label: "VS CPU（つよい）" },
                 { value: "cpu:veryhard", label: "VS CPU（鬼）" },
-                { value: "offline", label: "オフライン対戦" },
+                { value: "offline", label: "ローカル対戦" },
               ]}
               onChange={(e) => setGameMode(e.currentTarget.value as any)}
             />
