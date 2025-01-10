@@ -1,21 +1,18 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { ParsedUrlQuery } from "node:querystring";
 import CommonMeta from "../../components/CommonMeta";
 import { loadAllVoice } from "../../utils/yamlUtil";
 
 const Voice: NextPage = () => {
-  const [pushed, setPushed] = useState(false);
-  const { query, push, asPath } = useRouter();
+  const { query } = useRouter();
   const encodedVoice = encodeURIComponent((query.voice || "").toString());
 
   useEffect(() => {
-    if (pushed) return;
-
-    push(`/?voice=${encodedVoice}&id=${query.id}`);
-    setPushed(true);
-  }, [query.id, encodedVoice, push, asPath, pushed]);
+    // router.pushはエラーになるので、location.hrefでリダイレクトする（多分Vercel起因）
+    location.href = `/?voice=${encodedVoice}&id=${query.id}`;
+  }, [query.id, encodedVoice]);
 
   return (
     <>
