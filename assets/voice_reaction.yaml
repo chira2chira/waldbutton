@@ -149,6 +149,16 @@
   kana: ひめい12
   id: VMw6sVG-If4
   time: 2:06:29
+- url: /static/voice/悲鳴13.mp3
+  text: 悲鳴13
+  kana: ひめい13
+  id: -b0FIMwsNHU
+  time: 37:35
+- url: /static/voice/悲鳴14.mp3
+  text: 悲鳴14
+  kana: ひめい14
+  id: -b0FIMwsNHU
+  time: 1:28:52
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -1345,6 +1355,11 @@
   kana: シャッシャッシャッ
   id: uks_XNGJT9w
   time: 48:47
+- url: /static/voice/じゃばがあ！.mp3
+  text: じゃばがあ！
+  kana: じゃばがあ！
+  id: -b0FIMwsNHU
+  time: 1:28:35
 - url: /static/voice/しゃぶってる！.mp3
   text: しゃぶってる！
   kana: しゃぶってる！
@@ -1980,6 +1995,11 @@
   kana: ふっかぁ
   id: YyBeBDRCiTs
   time: 08:05
+- url: /static/voice/ふっとぉ.mp3
+  text: 太っとぉ
+  kana: ふっとぉ
+  id: vrCbNPX25JY
+  time: 40:17
 - url: /static/voice/フラグじゃないです！.mp3
   text: フラグじゃないです！
   kana: フラグじゃないです！
@@ -2135,6 +2155,11 @@
   kana: むかつくわーまじで
   id: Aj04AMJ74f8
   time: 1:22:15
+- url: /static/voice/無理だよぉ.mp3
+  text: 無理だよぉ
+  kana: むりだよぉ
+  id: vrCbNPX25JY
+  time: 40:26
 - url: /static/voice/無理！無理無理！.mp3
   text: 無理！無理無理！
   kana: むり！むりむり！
@@ -2470,6 +2495,11 @@
   kana: んにゃー
   id: Q42HqROlXGQ
   time: 56:08
+- url: /static/voice/んにゃにゃにゃにゃ！.mp3
+  text: んにゃにゃにゃにゃ！
+  kana: んにゃにゃにゃにゃ！
+  id: -b0FIMwsNHU
+  time: 50:11
 - url: /static/voice/んふふふ.mp3
   text: んふふふ
   kana: んふふふ
