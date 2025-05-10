@@ -163,11 +163,21 @@
   kana: じぶんだけたすかろうなんて、あまいよ
   id: oi_UdlACQ_I
   time: 1:31:09
+- url: /static/voice/っすぞ！！.mp3
+  text: っすぞ！！
+  kana: っすぞ！！
+  id: QLgMm0TC32c
+  time: 3:54:50
 - url: /static/voice/すべての人間をぶちのめす！.mp3
   text: すべての人間をぶちのめす！
   kana: すべてのにんげんをぶちのめす！
   id: LmC-BgpuhSc
   time: 1:17:39
+- url: /static/voice/洗濯機に頭から突っ込んでやろうか！？.mp3
+  text: 洗濯機に頭から突っ込んでやろうか！？
+  kana: せんたっきにあたまからつっこんでやろうか！？
+  id: QLgMm0TC32c
+  time: 3:54:53
 - url: /static/voice/そいつを〇して下さい！.mp3
   text: そいつを〇して下さい！
   kana: そいつをころしてください！
