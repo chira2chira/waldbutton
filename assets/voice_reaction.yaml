@@ -1700,6 +1700,11 @@
   kana: どうしよう～
   id: 9Ks2OwNJL4c
   time: 44:09
+- url: /static/voice/ど、どうなる～.mp3
+  text: ど、どうなる～
+  kana: ど、どうなる～
+  id: BoGBm75KMTo
+  time: 1:40:56
 - url: /static/voice/ドキィ！.mp3
   text: ドキィ！
   kana: ドキィ！
@@ -1980,6 +1985,11 @@
   kana: はくりょくはくりょくぅ
   id: _sWHX47i6bE
   time: 16:00
+- url: /static/voice/裸じゃない？！.mp3
+  text: 裸じゃない？！
+  kana: はだかじゃない？！
+  id: BoGBm75KMTo
+  time: 1:40:36
 - url: /static/voice/ハハハハハ.mp3
   text: ハハハハハ
   kana: ハハハハハ
