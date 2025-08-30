@@ -164,6 +164,16 @@
   kana: ひめい14
   id: -b0FIMwsNHU
   time: 1:28:52
+- url: /static/voice/悲鳴15.mp3
+  text: 悲鳴15
+  kana: ひめい15
+  id: Jc5wgZFpIfo
+  time: 13:42
+- url: /static/voice/悲鳴16.mp3
+  text: 悲鳴16
+  kana: ひめい16
+  id: Jc5wgZFpIfo
+  time: 1:01:59
 - url: /static/voice/声にならない叫び声.mp3
   text: 声にならない叫び声
   kana: こえにならないさけびごえ
@@ -719,6 +729,11 @@
   kana: うわぁぁぁぁ
   id: AAo1-DPKM2w
   time: 1:00:24
+- url: /static/voice/うわっ！.mp3
+  text: うわっ！
+  kana: うわっ！
+  id: Jc5wgZFpIfo
+  time: 1:01:57
 - url: /static/voice/うわぁっ.mp3
   text: うわぁっ
   kana: うわぁっ
@@ -839,6 +854,11 @@
   kana: あおぉう！
   id: KB5g7EysgtQ
   time: 1:47:07
+- url: /static/voice/おﾞおﾞおﾞおﾞおﾞおﾞおﾞ.mp3
+  text: おﾞおﾞおﾞおﾞおﾞおﾞおﾞ
+  kana: おﾞおﾞおﾞおﾞおﾞおﾞおﾞ
+  id: Jc5wgZFpIfo
+  time: 1:55:24
 - url: /static/voice/おーにょぁー！.mp3
   text: おーにょぁー！
   kana: おーにょぁー！
