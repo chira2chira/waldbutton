@@ -35,44 +35,25 @@ export async function fetchYoutubeInfo(ids: string[]): Promise<YouTubeInfo[]> {
   }));
 }
 
-function convertDuration(duration: string | undefined | null) {
-  if (!duration) return "";
-
-  // PT#H#M#S もしくは PT#M#S
-  const ma = duration.match(/\d+[HMS]/g);
-  if (ma === null) return "";
-
-  const result: string[] = [];
-  let over1Hour = false;
-  ma.forEach((x, i) => {
-    const num = x.substring(0, x.length - 1);
-    if (x.endsWith("H")) {
-      result.push(num);
-      over1Hour = true;
-    } else if (x.endsWith("M")) {
-      if (i === 0) {
-        result.push(num);
-      } else {
-        result.push(num.padStart(2, "0"));
-      }
-    } else if (x.endsWith("S")) {
-      if (over1Hour && i === 1) {
-        // M が 0
-        result.push("00");
-      }
-      result.push(num.padStart(2, "0"));
-    }
-  });
-  if (
-    (over1Hour && result.length === 2) ||
-    (!over1Hour && result.length === 1)
-  ) {
-    // S が 0
-    result.push("00");
-  } else if (over1Hour && result.length === 1) {
-    // M と S が 0
-    result.push("00");
-    result.push("00");
+function convertDuration(duration: string | undefined | null): string {
+  if (!duration) {
+    return "";
   }
-  return result.join(":");
+
+  const match = duration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!match) {
+    return "";
+  }
+
+  const hours = match[1] ? parseInt(match[1], 10) : 0;
+  const minutes = match[2] ? parseInt(match[2], 10) : 0;
+  const seconds = match[3] ? parseInt(match[3], 10) : 0;
+
+  if (hours > 0) {
+    return `${hours}:${String(minutes).padStart(2, "0")}:${String(
+      seconds
+    ).padStart(2, "0")}`;
+  } else {
+    return `${minutes}:${String(seconds).padStart(2, "0")}`;
+  }
 }
