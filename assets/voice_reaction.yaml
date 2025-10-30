@@ -89,6 +89,11 @@
   kana: わらい15
   id: QLgMm0TC32c
   time: 9:48
+- url: /static/voice/笑い16.mp3
+  text: 笑い16
+  kana: わらい16
+  id: ECC7HrxzPXI
+  time: 20:23
 - url: /static/voice/高笑い.mp3
   text: 高笑い
   kana: たかわらい
@@ -1730,6 +1735,11 @@
   kana: どうしよう～
   id: 9Ks2OwNJL4c
   time: 44:09
+- url: /static/voice/どうすんだよぉ！！.mp3
+  text: どうすんだよぉ！！
+  kana: どうすんだよぉ！！
+  id: ECC7HrxzPXI
+  time: 15:04
 - url: /static/voice/ど、どうなる～.mp3
   text: ど、どうなる～
   kana: ど、どうなる～
