@@ -9,7 +9,7 @@ export const container = css`
   align-items: center;
   background: #f5f8fa;
 
-  .bp5-dark & {
+  .bp6-dark & {
     background: #252a31;
   }
 `;
@@ -20,7 +20,7 @@ export const header = css`
   background: #182026;
   box-shadow: 0px 0px 3px 0px;
 
-  .bp5-dark & {
+  .bp6-dark & {
     box-shadow: 0px 0px 3px 0px #182026;
   }
 
@@ -129,7 +129,7 @@ export const footer = css`
     margin-top: 5px;
   }
 
-  .bp5-dark & {
+  .bp6-dark & {
     border-top: 1px solid #5c7080;
     background: #182026;
   }

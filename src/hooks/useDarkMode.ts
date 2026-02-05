@@ -30,9 +30,9 @@ export default function useDarkMode() {
 
   useEffect(() => {
     if (osAppearance === "dark") {
-      document.body.className = "bp5-dark";
+      document.body.className = "bp6-dark";
     } else {
-      document.body.className = "bp5-body";
+      document.body.className = "bp6-body";
     }
   }, [osAppearance]);
 }

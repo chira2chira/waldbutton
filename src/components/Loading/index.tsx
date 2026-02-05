@@ -44,10 +44,10 @@ const style = css`
     animation: ${spin} 1.5s infinite ease;
   }
 
-  .bp5-dark & {
+  .bp6-dark & {
     border: 2px solid #a7b6c2;
   }
-  .bp5-dark &:before {
+  .bp6-dark &:before {
     border-top-color: #394b59;
   }
 `;

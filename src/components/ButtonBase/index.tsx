@@ -179,7 +179,7 @@ const ButtonBase = forwardRef<HTMLButtonElement, VoiceButtonProps>(
                   ${isPlaying ? audio.current?.duration : 0}s 0s linear;
                 z-index: -1;
 
-                .bp5-dark & {
+                .bp6-dark & {
                   background: linear-gradient(
                     90deg,
                     rgba(255, 255, 255, 0) 40%,

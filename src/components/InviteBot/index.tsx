@@ -71,7 +71,7 @@ const InviteBot: React.VFC = () => {
               ワルトボタンbotをDiscordに招待する
             </a>
           </div>
-          <p className="bp5-running-text">
+          <p className="bp6-running-text">
             <code>/search キーワード</code>
             <span> をチャットするとボタンを検索することができます。</span>
             <br />
@@ -83,7 +83,7 @@ const InviteBot: React.VFC = () => {
             alt="ワルトボタンbotの/searchコマンドの使用例"
             loading="lazy"
           />
-          <p className="bp5-running-text">
+          <p className="bp6-running-text">
             <code>/connect</code>
             <span> をチャットするとブラウザで再生したワルトボタンをそのままVCで流すことができます。</span>
           </p>

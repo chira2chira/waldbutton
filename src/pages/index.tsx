@@ -366,10 +366,10 @@ const Home: NextPage<HomeProps> = (props) => {
           <div style={{ display: !isFilterMode ? undefined : "none" }}>
             <Tabs
               css={css`
-                & .bp5-tab-list {
+                & .bp6-tab-list {
                   margin-left: 10px;
                 }
-                & .bp5-tab-panel {
+                & .bp6-tab-panel {
                   margin-top: 8px;
                 }
               `}

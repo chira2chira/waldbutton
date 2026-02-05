@@ -34,9 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           dangerouslySetInnerHTML={{
             __html: `document.addEventListener("DOMContentLoaded", () => {
             if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-              document.body.className = "bp5-dark";
+              document.body.className = "bp6-dark";
               } else {
-                document.body.className = "bp5-body";
+                document.body.className = "bp6-body";
             }
             });`,
           }}
