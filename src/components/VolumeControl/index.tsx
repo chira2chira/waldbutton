@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState } from "react";
 import { Slider } from "@blueprintjs/core";
 import { VolumeContext } from "../../providers/VolumeProvider";
 
-const VolumeControl: React.VFC = () => {
+const VolumeControl: React.FC = () => {
   const { volume, setVolume } = useContext(VolumeContext);
   const [localVolume, setLocalVolume] = useState(volume); // 負荷対策
 

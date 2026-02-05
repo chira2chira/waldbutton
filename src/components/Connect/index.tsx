@@ -11,9 +11,11 @@ const Connect: React.FC = (props) => {
   useEffect(() => {
     const { connectMessage } = query;
     if (connectMessage) {
-      BottomToaster?.show({
-        message: connectMessage,
-        intent: connecting ? "success" : "danger",
+      BottomToaster?.then((toaster) => {
+        toaster.show({
+          message: connectMessage,
+          intent: connecting ? "success" : "danger",
+        });
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

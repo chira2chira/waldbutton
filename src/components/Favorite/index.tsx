@@ -16,7 +16,7 @@ type FavoriteProps = {
   onClose: () => void;
 };
 
-const Favorite: React.VFC<FavoriteProps> = (props) => {
+const Favorite: React.FC<FavoriteProps> = (props) => {
   const { editing, favorites, setEditing, updateFavorites } =
     useContext(FavoriteContext);
 

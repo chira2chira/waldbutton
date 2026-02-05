@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import { Icon } from "@blueprintjs/core";
 import { Tooltip } from "@blueprintjs/core";
 
-const OfferButton: React.VFC = () => {
+const OfferButton: React.FC = () => {
   const [stickyOpen, setStickyOpen] = useState(true);
 
   const handleScroll = useCallback(() => {

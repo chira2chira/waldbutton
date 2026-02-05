@@ -9,7 +9,7 @@ type OpenFavoriteButon = {
   onClick: () => void;
 };
 
-const OpenFavoriteButton: React.VFC<OpenFavoriteButon> = (props) => {
+const OpenFavoriteButton: React.FC<OpenFavoriteButon> = (props) => {
   const { editing } = useContext(FavoriteContext);
   const [textOpen, setTextOpen] = useState(true);
   const lastScrollY = useRef(99999);

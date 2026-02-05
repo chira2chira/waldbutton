@@ -5,7 +5,7 @@ type TweetButtonProps = {
   path: string;
 };
 
-const TweetButton: React.VFC<TweetButtonProps> = (props) => {
+const TweetButton: React.FC<TweetButtonProps> = (props) => {
   const [title, setTitle] = useState("");
 
   useEffect(() => {

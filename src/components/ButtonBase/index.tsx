@@ -125,9 +125,11 @@ const ButtonBase = forwardRef<HTMLButtonElement, VoiceButtonProps>(
 
     const handleError: ReactEventHandler<HTMLAudioElement> = (e) => {
       setStatus("error");
-      BottomToaster?.show({
-        intent: "danger",
-        message: e.currentTarget.error?.message,
+      BottomToaster?.then((toaster) => {
+        toaster.show({
+          intent: "danger",
+          message: e.currentTarget.error?.message,
+        });
       });
     };
 

@@ -8,7 +8,7 @@ type ContainerProps = {
   children: React.ReactNode;
 };
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: React.FC<ContainerProps> = (props) => {
   return (
     <div css={styles.container}>
       <div css={styles.header}>

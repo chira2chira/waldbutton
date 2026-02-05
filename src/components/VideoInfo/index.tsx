@@ -82,7 +82,7 @@ const controlButton = css`
   cursor: pointer;
 `;
 
-const VideoInfo: React.VFC<VideoInfoProps> = (props) => {
+const VideoInfo: React.FC<VideoInfoProps> = (props) => {
   const { isOpen, videoInfo, hasPrev, hasNext, onPrev, onNext } = props;
   const { addFavorite, removeFavorite, inFavorite } =
     useContext(FavoriteContext);

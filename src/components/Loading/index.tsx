@@ -52,7 +52,7 @@ const style = css`
   }
 `;
 
-const Loading: React.VFC = () => {
+const Loading: React.FC = () => {
   return <div css={style} />;
 };
 

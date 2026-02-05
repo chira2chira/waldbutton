@@ -19,7 +19,7 @@ function getCardImage(type: CommonMetaProps["cardType"]) {
   }
 }
 
-const CommonMeta: React.VFC<CommonMetaProps> = (props) => {
+const CommonMeta: React.FC<CommonMetaProps> = (props) => {
   return (
     <>
       <Head>

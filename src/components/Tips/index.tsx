@@ -2,7 +2,7 @@ import { Button, Classes, Dialog, H5, Tabs, Tab } from "@blueprintjs/core";
 import { css } from "@emotion/react";
 import React, { useState } from "react";
 
-const Tips: React.VFC = () => {
+const Tips: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [showTabId, setShowTabId] = useState("ios");
 

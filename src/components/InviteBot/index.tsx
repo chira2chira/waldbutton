@@ -5,7 +5,7 @@ import { sendEvent } from "../../utils/gtag";
 
 const INVITE_LINK = process.env.NEXT_PUBLIC_DISCORD_BOT_URL;
 
-const InviteBot: React.VFC = () => {
+const InviteBot: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleOpenLink = () => {

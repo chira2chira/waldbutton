@@ -74,7 +74,7 @@ const thumbDuration = css`
   color: #fff !important;
 `;
 
-const VideoCard: React.VFC<VideoCardProps> = (props) => {
+const VideoCard: React.FC<VideoCardProps> = (props) => {
   const [showInfo, setShowInfo] = useState(false);
 
   const handleShowChange = () => {

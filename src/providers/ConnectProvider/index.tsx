@@ -39,9 +39,11 @@ const ConnectProvider: React.FC<ConnectProviderProps> = (props) => {
         body: JSON.stringify({ url: voice.url }),
       });
       if (res.ok) {
-        BottomToaster?.show({
-          message: "VCで再生しました。",
-          intent: "success",
+        BottomToaster?.then((toaster) => {
+          toaster.show({
+            message: "VCで再生しました。",
+            intent: "success",
+          });
         });
         sendEvent({
           action: "play-on-discord",
@@ -50,15 +52,19 @@ const ConnectProvider: React.FC<ConnectProviderProps> = (props) => {
         });
       } else {
         const data = await res.json();
-        BottomToaster?.show({
-          message: data.message,
-          intent: "warning",
+        BottomToaster?.then((toaster) => {
+          toaster.show({
+            message: data.message,
+            intent: "warning",
+          });
         });
       }
     } catch (error) {
-      BottomToaster?.show({
-        message: "通信に失敗しました。",
-        intent: "danger",
+      BottomToaster?.then((toaster) => {
+        toaster.show({
+          message: "通信に失敗しました。",
+          intent: "danger",
+        });
       });
     }
   };

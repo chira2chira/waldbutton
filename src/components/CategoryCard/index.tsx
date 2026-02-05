@@ -12,7 +12,7 @@ type CategoryCardProps = {
   onVideoInfoOpen: (videoInfo: VoiceInfo) => void;
 };
 
-const CategoryCard: React.VFC<CategoryCardProps> = (props) => {
+const CategoryCard: React.FC<CategoryCardProps> = (props) => {
   const [showInfo, setShowInfo] = useState(false);
 
   const handleShowChange = () => {
