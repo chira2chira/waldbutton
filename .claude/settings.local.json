@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(yarn lint)",
-      "Bash(yarn add:*)"
+      "Bash(yarn add:*)",
+      "Bash(yarn build)",
+      "Bash(powershell -Command:*)",
+      "Bash(yarn install:*)"
     ]
   }
 }
