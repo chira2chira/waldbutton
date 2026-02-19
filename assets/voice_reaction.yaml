@@ -949,6 +949,11 @@
   kana: おこちゃまはよお！
   id: PVx1oIVUG6E
   time: 27:07
+- url: /static/voice/怒られたぁ.mp3
+  text: 怒られたぁ
+  kana: おこられたぁ
+  id: Ci6FTTHgKAo
+  time: 35:15
 - url: /static/voice/怒るよ！？.mp3
   text: 怒るよ！？
   kana: おこるよ！？
@@ -1985,6 +1990,11 @@
   kana: は～～～
   id: NRFo4GmzDh4
   time: 1:26:11
+- url: /static/voice/はーあ！.mp3
+  text: はーあ！
+  kana: はーあ！
+  id: Ci6FTTHgKAo
+  time: 1:23:49
 - url: /static/voice/はーぁあーぁあー.mp3
   text: はーぁあーぁあー
   kana: はーぁあーぁあー
@@ -1995,6 +2005,11 @@
   kana: は～おし！
   id: iB-ptfPSwJs
   time: 1:53:20
+- url: /static/voice/はー気持ちよかったぁ.mp3
+  text: はー気持ちよかったぁ
+  kana: はーきもちよかったぁ
+  id: Ci6FTTHgKAo
+  time: 2:39:00
 - url: /static/voice/はぁそうですか.mp3
   text: はぁそうですか
   kana: はぁそうですか

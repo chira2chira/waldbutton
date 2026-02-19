@@ -306,6 +306,11 @@
   kana: いぬすお
   id: tZmFdhHvvo8
   time: 1:06:07
+- url: /static/voice/嫌ですわぁほんとにー.mp3
+  text: 嫌ですわぁほんとにー
+  kana: いやですわぁほんとにー
+  id: Ci6FTTHgKAo
+  time: 1:24:59
 - url: /static/voice/うぇいうぇいうぇいうぇーい.mp3
   text: うぇいうぇいうぇいうぇーい
   kana: うぇいうぇいうぇいうぇーい
@@ -1177,6 +1182,11 @@
   kana: プラベのじかんだオラァ！
   id: t1segS3nyoY
   time: 25:24
+- url: /static/voice/プリプリダンス♪.mp3
+  text: プリプリダンス♪
+  kana: プリプリダンス♪
+  id: Ci6FTTHgKAo
+  time: 04:17
 - url: /static/voice/ベイビィポケモン使ってらぁｗ.mp3
   text: ベイビィポケモン使ってらぁｗ
   kana: ベイビィポケモンつかってらぁｗ
