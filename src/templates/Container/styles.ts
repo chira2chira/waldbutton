@@ -62,6 +62,11 @@ export const title = css`
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: top;
+
+    @media (max-width: 410px) {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   /** 古いデバイス向け */
