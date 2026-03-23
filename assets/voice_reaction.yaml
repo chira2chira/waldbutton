@@ -1305,6 +1305,11 @@
   kana: くせもの！
   id: 3u6YDefS8Os
   time: 1:17:58
+- url: /static/voice/くっそ.mp3
+  text: くっそ
+  kana: くっそ
+  id: Dsx5qddMP4o
+  time: 2:19:18
 - url: /static/voice/ぐちゃぐちゃになっちゃったぁ.mp3
   text: ぐちゃぐちゃになっちゃったぁ
   kana: ぐちゃぐちゃになっちゃったぁ
@@ -1510,6 +1515,11 @@
   kana: そこダメ！あー！
   id: 8ybP57l1FuQ
   time: 23:03
+- url: /static/voice/そこまで言うことないじゃん！.mp3
+  text: そこまで言うことないじゃん！
+  kana: そこまでいうことないじゃん！
+  id: Dsx5qddMP4o
+  time: 3:06:45
 - url: /static/voice/そんにゃあ.mp3
   text: そんにゃあ
   kana: そんにゃあ
@@ -2220,6 +2230,11 @@
   kana: まずいっち！
   id: LmC-BgpuhSc
   time: 57:39
+- url: /static/voice/まだ？.mp3
+  text: まだ？
+  kana: まだ？
+  id: Dsx5qddMP4o
+  time: 2:51:28
 - url: /static/voice/待って？.mp3
   text: 待って？
   kana: まって？
