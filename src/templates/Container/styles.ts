@@ -34,7 +34,7 @@ export const headerContainer = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
   margin: auto;
   width: 100%;
   max-width: 68em;
@@ -47,11 +47,12 @@ export const headerContainer = css`
 export const title = css`
   margin: 0;
   font-size: 30px !important;
+  line-height: 1.2;
   font-family: "Yusei Magic", sans-serif;
   font-weight: normal;
   color: #ffffff;
 
-  &:before {
+  /* &:before {
     content: "";
     display: inline-block;
     margin-right: 5px;
@@ -67,7 +68,7 @@ export const title = css`
       width: 35px;
       height: 35px;
     }
-  }
+  } */
 
   /** 古いデバイス向け */
   @media (max-width: 410px) {

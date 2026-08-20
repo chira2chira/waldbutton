@@ -143,3 +143,364 @@ export const YouTube7k: React.FC = () => {
     </div>
   );
 };
+
+const badgeIn = keyframes`
+  0% {
+    transform: scale(0.2) rotate(-18deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: scale(1.18) rotate(5deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(0.93) rotate(-3deg);
+  }
+
+  80% {
+    transform: scale(1.04) rotate(1deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+`;
+
+const shineSweep = keyframes`
+  0% {
+    transform: translateX(-30px) skewX(-18deg);
+    opacity: 1;
+  }
+
+  22%, 100% {
+    transform: translateX(58px) skewX(-18deg);
+    opacity: 1;
+  }
+`;
+
+const ringPulse = keyframes`
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.9;
+  }
+
+  45%, 100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+`;
+
+const confettiBurst = keyframes`
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(0.4);
+    opacity: 0;
+  }
+
+  10%, 50% {
+    opacity: 1;
+  }
+
+  65%, 100% {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(1);
+    opacity: 0;
+  }
+`;
+
+const twinkle = keyframes`
+  0%, 45%, 100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
+const glowPulse = keyframes`
+  0%, 100% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+`;
+
+/** お祝いロゴのループ周期。紙吹雪・光沢・波紋を同じ周期で回して弾ける瞬間を揃える */
+const CELEBRATION_CYCLE = "3.4s";
+/** 登場アニメーションが終わってからループを始めるまでの待ち時間 */
+const CELEBRATION_DELAY = 0.55;
+/** バッジが飛び出してくる登場アニメーションの尺 */
+const BADGE_IN_DURATION = 0.9;
+
+const confettiPieces = [
+  { tx: -30, ty: -14, rot: -260, color: "#ffd54a", round: false, delay: 0 },
+  { tx: 30, ty: -12, rot: 240, color: "#ff8ac3", round: false, delay: 0.04 },
+  { tx: -26, ty: 15, rot: 200, color: "#7ce2ff", round: false, delay: 0.12 },
+  { tx: 27, ty: 16, rot: -210, color: "#a6ff8c", round: false, delay: 0.08 },
+  { tx: -8, ty: -21, rot: 180, color: "#ffffff", round: true, delay: 0.16 },
+  { tx: 10, ty: -22, rot: -180, color: "#ffd54a", round: true, delay: 0.02 },
+  { tx: -32, ty: 2, rot: 150, color: "#ff8ac3", round: true, delay: 0.1 },
+  { tx: 32, ty: 4, rot: -160, color: "#7ce2ff", round: false, delay: 0.18 },
+  { tx: -14, ty: 21, rot: 240, color: "#ffd54a", round: false, delay: 0.06 },
+  { tx: 16, ty: 21, rot: -240, color: "#ffffff", round: false, delay: 0.14 },
+];
+
+const confettiStyle = css`
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  animation: ${confettiBurst} ${CELEBRATION_CYCLE}
+    cubic-bezier(0.1, 0.75, 0.3, 1) infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+`;
+
+const twinkleStyle = css`
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  animation: ${twinkle} ${CELEBRATION_CYCLE} ease-in-out infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+`;
+
+const sparklePath =
+  "M0,-6 C0.7,-1.7 1.7,-0.7 6,0 C1.7,0.7 0.7,1.7 0,6 C-0.7,1.7 -1.7,0.7 -6,0 C-1.7,-0.7 -0.7,-1.7 0,-6 Z";
+
+export const YouTube8k: React.FC = () => {
+  return (
+    <div
+      css={css`
+        display: flex;
+        align-items: center;
+        margin-left: -2px;
+
+        & > svg {
+          height: 40px;
+          width: auto;
+        }
+
+        /** 古いデバイス向け（タイトルの縮小に合わせる） */
+        @media (max-width: 410px) {
+          & > svg {
+            height: 35px;
+          }
+        }
+      `}
+    >
+      <svg
+        viewBox="0 0 68 48"
+        width="57"
+        height="40"
+        role="img"
+        aria-label="Congrats! YouTube 8k Subscribers!"
+      >
+        <defs>
+          <linearGradient id="wb8kBadge" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ff3b30" />
+            <stop offset="100%" stopColor="#d40000" />
+          </linearGradient>
+          <linearGradient id="wb8kRim" x1="0" y1="0" x2="0.3" y2="1">
+            <stop offset="0%" stopColor="#fff3bf" />
+            <stop offset="45%" stopColor="#ffd54a" />
+            <stop offset="100%" stopColor="#f0a500" />
+          </linearGradient>
+          <linearGradient id="wb8kShine" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+            <stop offset="45%" stopColor="#ffffff" stopOpacity="0.85" />
+            <stop offset="55%" stopColor="#ffffff" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+          </linearGradient>
+          <radialGradient id="wb8kGlow">
+            <stop offset="0%" stopColor="#ffd54a" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="#ffd54a" stopOpacity="0" />
+          </radialGradient>
+          <clipPath id="wb8kClip">
+            <rect x="10" y="8" width="48" height="32" rx="9" />
+          </clipPath>
+        </defs>
+
+        {/* 背後のほんのりした金色の光 */}
+        <ellipse
+          cx="34"
+          cy="24"
+          rx="34"
+          ry="24"
+          fill="url(#wb8kGlow)"
+          css={css`
+            animation: ${glowPulse} ${CELEBRATION_CYCLE} ease-in-out infinite;
+
+            @media (prefers-reduced-motion: reduce) {
+              animation: none;
+              opacity: 0.35;
+            }
+          `}
+        />
+
+        {/* バッジの形のまま広がって消える波紋 */}
+        <rect
+          x="10"
+          y="8"
+          width="48"
+          height="32"
+          rx="9"
+          fill="none"
+          stroke="#ffffff"
+          strokeWidth="1.6"
+          css={css`
+            transform-box: fill-box;
+            transform-origin: center;
+            opacity: 0;
+            animation: ${ringPulse} ${CELEBRATION_CYCLE} ease-out infinite;
+            animation-delay: ${CELEBRATION_DELAY}s;
+
+            @media (prefers-reduced-motion: reduce) {
+              animation: none;
+            }
+          `}
+        />
+
+        {/* 紙吹雪（バッジの後ろから飛び出す） */}
+        <g transform="translate(34,24)">
+          {confettiPieces.map((piece, i) => {
+            const style = {
+              "--tx": `${piece.tx}px`,
+              "--ty": `${piece.ty}px`,
+              "--rot": `${piece.rot}deg`,
+              animationDelay: `${CELEBRATION_DELAY + piece.delay}s`,
+            } as React.CSSProperties;
+
+            return piece.round ? (
+              <circle
+                key={i}
+                r="1.7"
+                fill={piece.color}
+                css={confettiStyle}
+                style={style}
+              />
+            ) : (
+              <rect
+                key={i}
+                x="-2"
+                y="-1.3"
+                width="4"
+                height="2.6"
+                rx="0.5"
+                fill={piece.color}
+                css={confettiStyle}
+                style={style}
+              />
+            );
+          })}
+        </g>
+
+        {/* バッジ本体 */}
+        <g
+          css={css`
+            transform-box: fill-box;
+            transform-origin: center;
+            animation: ${badgeIn} ${BADGE_IN_DURATION}s
+              cubic-bezier(0.2, 0.8, 0.3, 1) both;
+
+            @media (prefers-reduced-motion: reduce) {
+              animation: none;
+            }
+          `}
+        >
+          <rect
+            x="10"
+            y="8"
+            width="48"
+            height="32"
+            rx="9"
+            fill="url(#wb8kBadge)"
+            stroke="url(#wb8kRim)"
+            strokeWidth="2.4"
+          />
+
+          <text
+            x="34"
+            y="33.6"
+            textAnchor="middle"
+            fontFamily='"Yusei Magic", "Hiragino Kaku Gothic ProN", sans-serif'
+            fontSize="23"
+            fontWeight="bold"
+            letterSpacing="0.5"
+            fill="#8a0000"
+            opacity="0.5"
+          >
+            8K
+          </text>
+          <text
+            x="34"
+            y="32.6"
+            textAnchor="middle"
+            fontFamily='"Yusei Magic", "Hiragino Kaku Gothic ProN", sans-serif'
+            fontSize="23"
+            fontWeight="bold"
+            letterSpacing="0.5"
+            fill="#ffffff"
+          >
+            8K
+          </text>
+
+          {/* バッジの上を走る光沢 */}
+          <g clipPath="url(#wb8kClip)">
+            <rect
+              x="10"
+              y="2"
+              width="12"
+              height="44"
+              fill="url(#wb8kShine)"
+              css={css`
+                transform-box: fill-box;
+                transform-origin: center;
+                /** 登場中は動かないので、走り出すまで隠しておく */
+                opacity: 0;
+                animation: ${shineSweep} ${CELEBRATION_CYCLE} ease-in-out
+                  infinite;
+                animation-delay: ${BADGE_IN_DURATION}s;
+
+                @media (prefers-reduced-motion: reduce) {
+                  animation: none;
+                }
+              `}
+            />
+          </g>
+        </g>
+
+        {/* キラキラ */}
+        <g transform="translate(6.5,8.5) scale(0.62)">
+          <path
+            d={sparklePath}
+            fill="#ffffff"
+            css={twinkleStyle}
+            style={{ animationDelay: `${CELEBRATION_DELAY + 0.1}s` }}
+          />
+        </g>
+        <g transform="translate(62,40) scale(0.5)">
+          <path
+            d={sparklePath}
+            fill="#ffe9a3"
+            css={twinkleStyle}
+            style={{ animationDelay: `${CELEBRATION_DELAY + 0.35}s` }}
+          />
+        </g>
+      </svg>
+    </div>
+  );
+};
