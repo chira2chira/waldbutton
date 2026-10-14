@@ -15,7 +15,6 @@ const Container: React.FC<ContainerProps> = (props) => {
       <div css={styles.header}>
         <div css={styles.headerContainer}>
           <Link href="/">
-            <YouTube8k />
             <H1 css={styles.title}>ワルトボタン</H1>
           </Link>
           <div
